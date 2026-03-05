@@ -1,1085 +1,1153 @@
 [
   {
-    "scenario_id": "ANC_DANGER_SIGNS_01",
+    "scenario_id": "ANTENATAL_VISIT__DANGER_SIGNS_SCREENING",
     "title": "Antenatal Visit: Danger Signs Screening",
     "category": "Maternal Health (ANC)",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "duration_minutes": 5,
     "thumbnail_url": "/images/anc_danger_signs_01.png",
-    "short_description": "Learn how to handle Antenatal Visit: Danger Signs Screening correctly in the field.",
+    "short_description": "Learn how to handle Antenatal Visit: Danger Signs Screening correctly based on WHO protocols.",
     "language": "en",
     "skills_targeted": [
-      "Counseling",
-      "Danger Sign Identification",
-      "Immediate Referral"
+      "Clinical Assessment",
+      "WHO Protocols",
+      "Decision Making"
     ],
     "questions": [
       {
-        "question_id": "ANC_Q1",
-        "patient_prompt": "You are completing a routine 7th-month ANC follow up. Sita mentions she has been having 'very bad headaches' since yesterday and her vision is sometimes blurry. What are you most concerned about?",
-        "mcq_question": "What is the most accurate clinical assessment for these symptoms?",
+        "question_id": "Q_1",
+        "patient_prompt": "You are conducting a routine ANC visit. Meena, 6 months pregnant, says she has been feeling fine. You check her blood pressure and find the diastolic reading is 85 mmHg.",
+        "mcq_question": "What is your next step according to protocol?",
         "options": [
           {
-            "option_id": "OPT_A",
-            "text": "These are common pregnancy symptoms caused by stress.",
+            "option_id": "A",
+            "text": "Immediately refer her to hospital — it is an emergency",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_B",
-            "text": "These are severe danger signs of Pre-eclampsia.",
+            "option_id": "B",
+            "text": "Give her antihypertensive medication right away",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_C",
-            "text": "She is likely just dehydrated and needs ORS.",
+            "option_id": "C",
+            "text": "Repeat the blood pressure reading after 1 hour of rest",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_D",
-            "text": "She needs to lie down and take a paracetamol.",
+            "option_id": "D",
+            "text": "Record it as normal and continue the visit",
             "keywords": [],
             "intents": []
           }
         ],
-        "correct_option_id": "OPT_B",
-        "critical": true,
-        "explanation_correct": "Correct! Severe headache combined with blurred vision in the third trimester are classic danger signs of Pre-eclampsia.",
-        "explanation_wrong": "Incorrect. Severe headache and blurred vision are critical danger signs for Pre-eclampsia.",
-        "tags": {
-          "category": "assessment",
-          "protocol_step": "step_1"
-        }
-      },
-      {
-        "question_id": "ANC_Q2",
-        "patient_prompt": "After identifying the danger signs, Sita asks if she can just rest until her husband comes back tomorrow evening. What should you do?",
-        "mcq_question": "What is your immediate next action?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Agree, and tell her to call you if the headache gets worse tomorrow.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Immediately arrange transport and refer her to the nearest CHC/FRU.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Tell her to walk to the sub-center immediately to check BP.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Give her an iron-folic acid tablet to help with the headache.",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_B",
-        "critical": true,
-        "explanation_correct": "Correct. Pre-eclampsia can escalate to severe eclampsia (seizures) very quickly. Immediate referral is needed.",
-        "explanation_wrong": "Wrong. You missed a critical referral. You must never delay care when eclampsia danger signs are present.",
-        "tags": {
-          "category": "action",
-          "protocol_step": "step_2"
-        }
-      },
-      {
-        "question_id": "ANC_Q3",
-        "patient_prompt": "While arranging the transport, Sita tells you she hasn't felt the baby move at all today. How do you respond?",
-        "mcq_question": "Which of these is the correct protocol response to decreased fetal movement?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Tell her babies sleep a lot inside and not to worry.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Tell her to drink a sugary drink and wait an hour.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Acknowledge this as another critical danger sign (Decreased Fetal Movement) and expedite the referral.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Press hard on her stomach to wake the baby up.",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_C",
-        "critical": true,
-        "explanation_correct": "Correct. Decreased fetal movement is another major danger sign indicating potential fetal distress.",
-        "explanation_wrong": "Incorrect. Decreased fetal movement is a major danger sign. Dismissing it delays life-saving care.",
-        "tags": {
-          "category": "assessment",
-          "protocol_step": "step_3"
-        }
-      },
-      {
-        "question_id": "ANC_Q4",
-        "patient_prompt": "Sita is admitted and treated. Before you leave the hospital, what documentation must you complete?",
-        "mcq_question": "What is the correct tracking protocol?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Update the MCP card and your ASHA diary with the referral details and diagnosis.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Nothing, the hospital does all the paperwork.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Just tell the ANM verbally next month.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Fill out a birth certificate in advance.",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_A",
+        "correct_option_id": "C",
         "critical": false,
-        "explanation_correct": "Correct. Maintaining the Mother and Child Protection (MCP) card and your own ASHA diary is crucial.",
-        "explanation_wrong": "Incorrect. Proper documentation in the MCP card and ASHA diary is a mandatory protocol step.",
-        "tags": {
-          "category": "documentation",
-          "protocol_step": "step_4"
-        }
+        "explanation_correct": "Correct! As per the ANC Pre-eclampsia Screening Protocol (Section C3): 'If diastolic blood pressure is 90 mmHg, repeat after 1 hour rest.' A single reading of 85 mmHg is not enough to classify — the reading must be repeated to confirm.",
+        "explanation_wrong": "Incorrect. As per the ANC Pre-eclampsia Screening Protocol (Section C3): 'If diastolic blood pressure is 90 mmHg, repeat after 1 hour rest.' A single reading of 85 mmHg is not enough to classify — the reading must be repeated to confirm."
+      },
+      {
+        "question_id": "Q_2",
+        "patient_prompt": "During Sita's 7th-month ANC visit, you find her diastolic BP is 95 mmHg on two separate readings taken 1 hour apart. She also has 2+ protein in her urine. However, she reports no headache, no blurred vision, and no epigastric pain.",
+        "mcq_question": "What is the correct classification?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Severe Pre-eclampsia — refer urgently with magnesium sulphate",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Pre-eclampsia — refer to hospital",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Normal Hypertension — advise rest and follow up in one week",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Risk of Pre-eclampsia — give aspirin and calcium",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "B",
+        "critical": false,
+        "explanation_correct": "Correct! Per Section C3: Diastolic BP 90–110 mmHg on two readings AND 2+ proteinuria, WITHOUT severe symptoms (headache, blurred vision, epigastric pain) = Pre-eclampsia, not Severe Pre-eclampsia. Action: Revise birth plan and refer to hospital.",
+        "explanation_wrong": "Incorrect. Per Section C3: Diastolic BP 90–110 mmHg on two readings AND 2+ proteinuria, WITHOUT severe symptoms (headache, blurred vision, epigastric pain) = Pre-eclampsia, not Severe Pre-eclampsia. Action: Revise birth plan and refer to hospital."
+      },
+      {
+        "question_id": "Q_3",
+        "patient_prompt": "Kavita is 8 months pregnant. On ANC screening, her diastolic BP is 115 mmHg. She complains of severe headache and blurred vision. Urine shows 3+ protein. She has no prior history of hypertension.",
+        "mcq_question": "What is the MOST CRITICAL immediate action before referring her?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Give her paracetamol for headache and advise rest",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Give oral antihypertensive tablets and observe for 30 minutes",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Give magnesium sulphate and appropriate antihypertensives, then refer urgently",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Start iron supplementation and refer at next available transport",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": false,
+        "explanation_correct": "Correct! Section C3 + Emergency Treatment B13: Diastolic BP ≥110 mmHg with 3+ proteinuria AND severe symptoms = Severe Pre-eclampsia. Protocol mandates giving magnesium sulphate AND antihypertensives BEFORE urgent referral. Delay is life-threatening.",
+        "explanation_wrong": "Incorrect. Section C3 + Emergency Treatment B13: Diastolic BP ≥110 mmHg with 3+ proteinuria AND severe symptoms = Severe Pre-eclampsia. Protocol mandates giving magnesium sulphate AND antihypertensives BEFORE urgent referral. Delay is life-threatening."
+      },
+      {
+        "question_id": "Q_4",
+        "patient_prompt": "During ANC, Rekha (28 weeks pregnant) has no danger symptoms but mentions she had pre-eclampsia in a previous pregnancy. Her current BP is 80 mmHg diastolic, no proteinuria, and no other signs. She lives in a low calcium-intake area.",
+        "mcq_question": "Which TWO preventive interventions should you provide according to WHO protocol?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Magnesium sulphate and bed rest",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Iron folate only — no other medication is needed yet",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Low-dose aspirin AND calcium supplementation",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Antihypertensive drug and hospital referral",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": true,
+        "explanation_correct": "Correct! Section C3 — Risk of Pre-eclampsia: Women with prior pre-eclampsia history classify as 'Risk of Pre-eclampsia'. Protocol states: 'Give aspirin' AND 'Give calcium if low dietary intake area.' Both are mandatory preventive measures in this context.",
+        "explanation_wrong": "Incorrect. Section C3 — Risk of Pre-eclampsia: Women with prior pre-eclampsia history classify as 'Risk of Pre-eclampsia'. Protocol states: 'Give aspirin' AND 'Give calcium if low dietary intake area.' Both are mandatory preventive measures in this context."
+      },
+      {
+        "question_id": "Q_5",
+        "patient_prompt": "Pooja is 32 weeks pregnant with severe headache, blurred vision, and epigastric pain. Diastolic BP is 112 mmHg. She received magnesium sulphate loading dose IV 20 minutes ago. Before the next dose, you check: respiratory rate 14 breaths/min, knee jerk absent, urine output 80 ml in last 4 hours.",
+        "mcq_question": "What is the correct decision regarding the next dose of magnesium sulphate?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Give the next dose — 20 minutes have passed since the loading dose",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Reduce the dose to half and administer IM",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Do NOT give the next dose — three contraindication signs are present",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Switch to diazepam and continue with the next scheduled magnesium sulphate dose later",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": true,
+        "explanation_correct": "Correct! Section B13: 'DO NOT give the next dose if ANY of these signs: knee jerk absent / urine output <100 ml/4 hrs / respiratory rate <16/min.' All three contraindications are present. Antidote if toxicity: calcium gluconate 1g IV.",
+        "explanation_wrong": "Incorrect. Section B13: 'DO NOT give the next dose if ANY of these signs: knee jerk absent / urine output <100 ml/4 hrs / respiratory rate <16/min.' All three contraindications are present. Antidote if toxicity: calcium gluconate 1g IV."
       }
     ]
   },
   {
-    "scenario_id": "PNC_BLEEDING_FEVER_01",
-    "title": "Postnatal Follow-up: Heavy Bleeding",
+    "scenario_id": "ANTENATAL_ANAEMIA_SCREENING",
+    "title": "Antenatal Anaemia Screening",
+    "category": "Maternal Health (ANC)",
+    "difficulty": "Easy",
+    "duration_minutes": 5,
+    "thumbnail_url": "/images/anc_danger_signs_01.png",
+    "short_description": "Learn how to handle Antenatal Anaemia Screening correctly based on WHO protocols.",
+    "language": "en",
+    "skills_targeted": [
+      "Clinical Assessment",
+      "WHO Protocols",
+      "Decision Making"
+    ],
+    "questions": [
+      {
+        "question_id": "Q_6",
+        "patient_prompt": "You are screening Lakshmi, who is 5 months pregnant, for anaemia. She looks pale. You check her haemoglobin — it is 9 g/dl. She is not short of breath and has no other complaints.",
+        "mcq_question": "How should you classify and treat her?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Severe Anaemia — refer urgently to hospital",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Moderate Anaemia — give double dose of iron tablet twice daily for 3 months",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Normal — give standard single iron tablet once daily",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "No treatment needed — pallor alone is not a sign of anaemia",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "B",
+        "critical": false,
+        "explanation_correct": "Correct! Section C4 — Check for Anaemia: Haemoglobin 7–11 g/dl = Moderate Anaemia. Treatment: double dose of iron (1 tablet twice daily for 3 months), counsel on compliance, and reassess at next ANC visit in 4–6 weeks.",
+        "explanation_wrong": "Incorrect. Section C4 — Check for Anaemia: Haemoglobin 7–11 g/dl = Moderate Anaemia. Treatment: double dose of iron (1 tablet twice daily for 3 months), counsel on compliance, and reassess at next ANC visit in 4–6 weeks."
+      },
+      {
+        "question_id": "Q_7",
+        "patient_prompt": "During an ANC visit, you observe that Sunita (7 months pregnant) has severe palmar and conjunctival pallor. You are in a rural setting with no haemoglobin testing equipment available. Her breathing rate is 32 breaths per minute.",
+        "mcq_question": "What is the correct classification and action?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Moderate Anaemia — give iron and reassess in 4 weeks",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Normal variation — pallor in pregnancy is common, advise nutrition",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Severe Anaemia — revise birth plan for facility with blood transfusion services and refer urgently",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Risk of Anaemia — give iron folate and monitor weekly",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": false,
+        "explanation_correct": "Correct! Section C4: Severe palmar AND conjunctival pallor WITH ≥30 breaths/min = Severe Anaemia, even without Hb measurement. Protocol: Revise birth plan for facility with blood transfusion services, give double dose iron, refer urgently to hospital.",
+        "explanation_wrong": "Incorrect. Section C4: Severe palmar AND conjunctival pallor WITH ≥30 breaths/min = Severe Anaemia, even without Hb measurement. Protocol: Revise birth plan for facility with blood transfusion services, give double dose iron, refer urgently to hospital."
+      },
+      {
+        "question_id": "Q_8",
+        "patient_prompt": "Priya is at her first ANC visit at 12 weeks. Her Hb is 11.5 g/dl. There is no pallor. She has no complaints.",
+        "mcq_question": "What iron supplementation should she receive?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "No supplementation needed — Hb is within normal range",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Double dose iron tablet twice daily — as a precaution in pregnancy",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Iron tablet once daily for 3 months — standard preventive supplementation",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "IV iron infusion — oral iron is insufficient in pregnancy",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": false,
+        "explanation_correct": "Correct! Section C4 — No Clinical Anaemia: Hb ≥11 g/dl with no pallor = No Clinical Anaemia. Protocol still mandates: 'Give iron 1 tablet once daily for 3 months' as routine preventive supplementation during pregnancy. Counsel on compliance.",
+        "explanation_wrong": "Incorrect. Section C4 — No Clinical Anaemia: Hb ≥11 g/dl with no pallor = No Clinical Anaemia. Protocol still mandates: 'Give iron 1 tablet once daily for 3 months' as routine preventive supplementation during pregnancy. Counsel on compliance."
+      },
+      {
+        "question_id": "Q_9",
+        "patient_prompt": "Geeta is 8 months pregnant and in early labour. You identify severe conjunctival pallor and her Hb is 6.5 g/dl. Breathing rate is 28/min.",
+        "mcq_question": "According to protocol, what is the correct approach given she is already in early labour?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Refer urgently to hospital immediately — do not wait for delivery",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Proceed with delivery at primary care level, give double iron dose, monitor closely",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Give blood transfusion at primary care facility and then allow normal delivery",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Wait until delivery is complete before referring, to avoid risk during transport",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "A",
+        "critical": true,
+        "explanation_correct": "Correct! Section C4 + Labour Protocol: Severe Anaemia (Hb <7 g/dl) with pallor in early labour = refer urgently to hospital immediately. Only in late labour (imminent delivery) should delivery be completed before referral with intensive monitoring.",
+        "explanation_wrong": "Incorrect. Section C4 + Labour Protocol: Severe Anaemia (Hb <7 g/dl) with pallor in early labour = refer urgently to hospital immediately. Only in late labour (imminent delivery) should delivery be completed before referral with intensive monitoring."
+      },
+      {
+        "question_id": "Q_10",
+        "patient_prompt": "At 28 weeks follow-up, Radha's Hb is 8.5 g/dl (moderate anaemia). She received the first month of double-dose iron tablets but stopped after 2 weeks due to nausea. She believes her diet is sufficient.",
+        "mcq_question": "As an ASHA worker, what is the MOST IMPORTANT combined action?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Prescribe anti-nausea medication and double the iron dose again",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Accept her decision and advise dietary improvement only",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Counsel on compliance with the treatment, address side effects, reassess at next visit in 4–6 weeks",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Classify her as non-compliant and refer directly to hospital",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": true,
+        "explanation_correct": "Correct! Section C4 — Moderate Anaemia Follow-up: Protocol emphasizes 'Counsel on compliance with treatment' as a mandatory step alongside giving double iron dose. Reassessment at next ANC visit (4–6 weeks) is required. If anaemia persists, refer to hospital.",
+        "explanation_wrong": "Incorrect. Section C4 — Moderate Anaemia Follow-up: Protocol emphasizes 'Counsel on compliance with treatment' as a mandatory step alongside giving double iron dose. Reassessment at next ANC visit (4–6 weeks) is required. If anaemia persists, refer to hospital."
+      }
+    ]
+  },
+  {
+    "scenario_id": "POSTNATAL_FOLLOW_UP__HEAVY_BLEEDING__PPH_",
+    "title": "Postnatal Follow-up: Heavy Bleeding (PPH)",
     "category": "Maternal Health (PNC)",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "duration_minutes": 6,
     "thumbnail_url": "/images/pnc_bleeding_fever_01.png",
-    "short_description": "Manage a postnatal emergency of postpartum hemorrhage.",
+    "short_description": "Learn how to handle Postnatal Follow-up: Heavy Bleeding (PPH) correctly based on WHO protocols.",
     "language": "en",
     "skills_targeted": [
-      "PNC Protocols",
-      "Emergency Transport"
+      "Clinical Assessment",
+      "WHO Protocols",
+      "Decision Making"
     ],
     "questions": [
       {
-        "question_id": "PNC_Q1",
-        "patient_prompt": "You visit Maya on Day 3 after delivery. She says she is changing her pad every hour because it's completely soaked.",
-        "mcq_question": "What does this symptom indicate?",
+        "question_id": "Q_11",
+        "patient_prompt": "Sunita has just delivered her baby. The placenta has been delivered and is complete. You notice the uterus feels soft and is not well contracted. There is no heavy bleeding at this moment.",
+        "mcq_question": "What is the FIRST action you should take?",
         "options": [
           {
-            "option_id": "OPT_A",
-            "text": "Normal lochia flow after childbirth.",
+            "option_id": "A",
+            "text": "Immediately refer to hospital",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_B",
-            "text": "Postpartum Hemorrhage (PPH) - a severe danger sign.",
+            "option_id": "B",
+            "text": "Give ergometrine 0.2 mg IM right away",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_C",
-            "text": "A minor infection that needs antibiotics.",
+            "option_id": "C",
+            "text": "Massage the uterine fundus until it is hard and well contracted",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_D",
-            "text": "Dehydration.",
+            "option_id": "D",
+            "text": "Insert an IV line and wait to see if bleeding increases",
             "keywords": [],
             "intents": []
           }
         ],
-        "correct_option_id": "OPT_B",
-        "critical": true,
-        "explanation_correct": "Correct. Soaking a pad every hour is classic Postpartum Hemorrhage (PPH) and is a massive medical emergency.",
-        "explanation_wrong": "Wrong. This is highly abnormal and life-threatening bleeding (PPH)."
-      },
-      {
-        "question_id": "PNC_Q2",
-        "patient_prompt": "Maya's mother-in-law says she will give her hot turmeric milk to stop the bleeding. What is your action?",
-        "mcq_question": "What is the immediate ASHA protocol?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Agree and wait 2 hours to see if it works.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Tell her to sleep with legs elevated.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Call an ambulance (108) immediately for emergency referral.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Give her IFA tablets to quickly replace the blood loss.",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_C",
-        "critical": true,
-        "explanation_correct": "Correct. PPH requires immediate hospitalization; any delay can result in maternal death.",
-        "explanation_wrong": "Wrong! You cannot treat active hemorrhaging at home. You MUST call an ambulance immediately."
-      },
-      {
-        "question_id": "PNC_Q3",
-        "patient_prompt": "While waiting for the ambulance, Maya feels dizzy and her skin is pale and cold.",
-        "mcq_question": "What should you do while waiting for transport?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Keep her warm, elevate her legs, and encourage ORS if she is conscious.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Make her walk around to keep her awake.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Give her a strong cup of tea.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Start chest compressions.",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_A",
+        "correct_option_id": "C",
         "critical": false,
-        "explanation_correct": "Shock management protocol involves keeping the mother warm and elevating legs to direct blood to critical organs.",
-        "explanation_wrong": "Incorrect. You must treat for hemorrhagic shock by keeping her flat, legs elevated, and warm."
-      }
-    ]
-  },
-  {
-    "scenario_id": "CHILD_DIARRHEA_ORS_01",
-    "title": "Child Diarrhea: ORS + Zinc",
-    "category": "Child Health",
-    "difficulty": "Medium",
-    "duration_minutes": 5,
-    "thumbnail_url": "/images/child_diarrhea_ors_01.png",
-    "short_description": "Treating acute childhood diarrhea and preventing dehydration.",
-    "language": "en",
-    "skills_targeted": [
-      "Dehydration Assessment",
-      "ORS Preparation"
-    ],
-    "questions": [
-      {
-        "question_id": "DIA_Q1",
-        "patient_prompt": "A mother brings her 2-year-old son who has had 5 watery stools today. He is thirsty and restless.",
-        "mcq_question": "Which classification of dehydration does this child have based on IMNCI guidelines?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "No Dehydration",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Some Dehydration",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Severe Dehydration",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Chronic Diarrhea",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_B",
-        "critical": true,
-        "explanation_correct": "Correct. Being restless and thirsty are key indicators of 'Some Dehydration' requiring Plan B treatment.",
-        "explanation_wrong": "Incorrect. Thirst and restlessness indicate 'Some Dehydration'."
+        "explanation_correct": "Correct! Section B10 — Bleeding: When uterus is soft/not well contracted, the FIRST step is: 'Place cupped palm on uterine fundus... Massage fundus in a circular motion until uterus is well contracted.' Uterine massage is the initial intervention before drugs or referral.",
+        "explanation_wrong": "Incorrect. Section B10 — Bleeding: When uterus is soft/not well contracted, the FIRST step is: 'Place cupped palm on uterine fundus... Massage fundus in a circular motion until uterus is well contracted.' Uterine massage is the initial intervention before drugs or referral."
       },
       {
-        "question_id": "DIA_Q2",
-        "patient_prompt": "How will you instruct the mother to prepare ORS?",
-        "mcq_question": "What is the correct protocol for ORS mixing?",
+        "question_id": "Q_12",
+        "patient_prompt": "Meera delivered 30 minutes ago. The placenta is delivered and complete. Despite uterine massage, the uterus remains soft. Heavy bleeding continues — the pad soaks in under 5 minutes.",
+        "mcq_question": "According to WHO protocol, what is the correct sequence of immediate actions?",
         "options": [
           {
-            "option_id": "OPT_A",
-            "text": "Mix half the packet in 1 glass of water.",
+            "option_id": "A",
+            "text": "Give ergometrine 0.2 mg IV, apply pressure, refer",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_B",
-            "text": "Mix one full packet in 1 Litre of clean drinking water.",
+            "option_id": "B",
+            "text": "Give oxytocin 10 IU IM, insert IV line with 20 IU oxytocin at 60 drops/min, empty bladder, check BP every 15 min",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_C",
-            "text": "Boil the ORS powder with milk.",
+            "option_id": "C",
+            "text": "Give misoprostol 4 tablets under the tongue first, then call for help",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_D",
-            "text": "Mix 2 spoons in a small bowl of water.",
+            "option_id": "D",
+            "text": "Apply aortic compression, give diazepam, and refer immediately",
             "keywords": [],
             "intents": []
           }
         ],
-        "correct_option_id": "OPT_B",
-        "critical": true,
-        "explanation_correct": "Correct! The WHO standard protocol is one entire packet in 1 Litre of water.",
-        "explanation_wrong": "Wrong. ORS must always be mixed entirely in exactly 1 Litre of water to prevent electrolyte imbalance."
-      },
-      {
-        "question_id": "DIA_Q3",
-        "patient_prompt": "The mother asks if she should stop giving the baby food until the diarrhea stops.",
-        "mcq_question": "What is your counseling response?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Yes, rest the stomach for 24 hours.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "No, continue feeding and giving breastmilk to prevent malnutrition.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Only give water with salt.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Give only solid dry foods.",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_B",
+        "correct_option_id": "B",
         "critical": false,
-        "explanation_correct": "Correct. Starving a child during diarrhea worsens malnutrition. Feeding must continue.",
-        "explanation_wrong": "Incorrect. You must ALWAYS instruct the mother to continue feeding and breastfeeding during diarrhea."
-      }
-    ]
-  },
-  {
-    "scenario_id": "CHILD_FEVER_DANGER_01",
-    "title": "Child Fever: Danger Signs",
-    "category": "Child Health",
-    "difficulty": "Hard",
-    "duration_minutes": 6,
-    "thumbnail_url": "/images/child_fever_danger_01.png",
-    "short_description": "Assess a febrile child for malaria, pneumonia, and other severe diseases.",
-    "language": "en",
-    "skills_targeted": [
-      "IMNCI Protocols",
-      "Danger Signs"
-    ],
-    "questions": [
-      {
-        "question_id": "FEV_Q1",
-        "patient_prompt": "A 3-year-old child has had a high fever for 3 days. When you examine the child, you notice fast breathing (50 breaths per minute).",
-        "mcq_question": "What does fast breathing alongside fever indicate?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Pneumonia",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Simple Cold",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Malaria",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Measles",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_A",
-        "critical": true,
-        "explanation_correct": "Correct. Fast breathing (>40 breaths/min for a 3-year-old) is the primary IMNCI criteria for Pneumonia.",
-        "explanation_wrong": "Incorrect. Fast breathing is the cardinal sign of Pneumonia in children."
+        "explanation_correct": "Correct! Section B4 — Postpartum Heavy Bleeding: 'Call for extra help. Massage uterus and give oxytocin 10 IU IM. Insert an IV line and give IV fluids with 20 IU oxytocin at 60 drops/min. Empty bladder. Check and record BP and pulse every 15 minutes.'",
+        "explanation_wrong": "Incorrect. Section B4 — Postpartum Heavy Bleeding: 'Call for extra help. Massage uterus and give oxytocin 10 IU IM. Insert an IV line and give IV fluids with 20 IU oxytocin at 60 drops/min. Empty bladder. Check and record BP and pulse every 15 minutes.'"
       },
       {
-        "question_id": "FEV_Q2",
-        "patient_prompt": "You also note lower chest wall in-drawing when the child breathes in.",
-        "mcq_question": "What is your clinical decision?",
+        "question_id": "Q_13",
+        "patient_prompt": "Anjali delivered 1 hour ago. Heavy bleeding continues despite uterine massage and oxytocin. IV oxytocin is unavailable at this rural health post.",
+        "mcq_question": "What is the WHO-recommended alternative?",
         "options": [
           {
-            "option_id": "OPT_A",
-            "text": "Give paracetamol and check tomorrow.",
+            "option_id": "A",
+            "text": "Give ergometrine 0.5 mg IM immediately",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_B",
-            "text": "Refer URGENTLY to a hospital as this is Severe Pneumonia.",
+            "option_id": "B",
+            "text": "Apply bimanual compression only and transport to hospital",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_C",
-            "text": "Give ORS.",
+            "option_id": "C",
+            "text": "Give misoprostol 4 tablets (800 mcg) sublingually",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_D",
-            "text": "Do a Malaria Rapid Diagnostic Test (RDT).",
+            "option_id": "D",
+            "text": "Give oral misoprostol 400 mcg and wait 30 minutes",
             "keywords": [],
             "intents": []
           }
         ],
-        "correct_option_id": "OPT_B",
-        "critical": true,
-        "explanation_correct": "Correct. Chest in-drawing means Severe Pneumonia, which requires urgently injected antibiotics at a facility.",
-        "explanation_wrong": "Wrong! Chest in-drawing is a massive danger sign of Severe Pneumonia. Immediate referral is mandatory."
-      }
-    ]
-  },
-  {
-    "scenario_id": "TB_SUSPECT_01",
-    "title": "TB Suspect: Cough > 2 Weeks",
-    "category": "Communicable Disease (TB)",
-    "difficulty": "Medium",
-    "duration_minutes": 6,
-    "thumbnail_url": "/images/tb_suspect_01.png",
-    "short_description": "Roleplay identifying and referring a suspected Tuberculosis patient.",
-    "language": "en",
-    "skills_targeted": [
-      "TB Screening",
-      "Sputum Collection"
-    ],
-    "questions": [
-      {
-        "question_id": "TB_Q1",
-        "patient_prompt": "Ramesh, a 45-year-old man, complains of a constant cough that hasn't gone away for 3 weeks. He also mentions night sweats.",
-        "mcq_question": "According to NTEP guidelines, what should be your immediate suspicion?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Seasonal Flu",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Asthma",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Tuberculosis (TB) Suspect",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "COVID-19 definitely",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_C",
-        "critical": true,
-        "explanation_correct": "Correct! Cough > 2 weeks accompanied by night sweats classifies him as a presumptive TB case.",
-        "explanation_wrong": "Incorrect. Any cough lasting longer than 2 weeks MUST be treated as a TB suspect according to national guidelines."
-      },
-      {
-        "question_id": "TB_Q2",
-        "patient_prompt": "Ramesh refuses to go to the hospital because he thinks they will charge him a lot of money.",
-        "mcq_question": "How do you counsel him?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Tell him TB testing and treatment (DOTS) is completely free at government hospitals.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Offer him some herbal cough syrup.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Tell him to go to a private clinic.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Tell him to ignore it, it's just a cough.",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_A",
+        "correct_option_id": "C",
         "critical": false,
-        "explanation_correct": "Correct. A key ASHA responsibility is educating patients that TB diagnosis and medication are 100% free under the government.",
-        "explanation_wrong": "Incorrect. You must inform him that government TB services are completely free to encourage testing."
+        "explanation_correct": "Correct! Section B10 + WHO PPH Recommendations: 'If IV oxytocin not available or if bleeding does not respond to oxytocin, give misoprostol — 4 tablets of 200 mcg (800 mcg) under the tongue.' This is the explicitly stated alternative. Ergometrine is contraindicated in hypertensive patients.",
+        "explanation_wrong": "Incorrect. Section B10 + WHO PPH Recommendations: 'If IV oxytocin not available or if bleeding does not respond to oxytocin, give misoprostol — 4 tablets of 200 mcg (800 mcg) under the tongue.' This is the explicitly stated alternative. Ergometrine is contraindicated in hypertensive patients."
       },
       {
-        "question_id": "TB_Q3",
-        "patient_prompt": "What specimen needs to be collected for his TB diagnostic test?",
-        "mcq_question": "What test is ordered for a presumptive pulmonary TB patient?",
+        "question_id": "Q_14",
+        "patient_prompt": "Padma delivered at home 45 minutes ago. The placenta has NOT been delivered yet. She is bleeding heavily. You arrive at the scene and the placenta remains undelivered 1 hour after the baby's birth.",
+        "mcq_question": "What is the correct sequence of management according to protocol?",
         "options": [
           {
-            "option_id": "OPT_A",
-            "text": "Blood Test",
+            "option_id": "A",
+            "text": "Wait another 30 minutes and attempt controlled cord traction again",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_B",
-            "text": "Sputum Test (Two samples)",
+            "option_id": "B",
+            "text": "Give ergometrine IM to contract the uterus and deliver the placenta",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_C",
-            "text": "Urine Test",
+            "option_id": "C",
+            "text": "Attempt manual removal of placenta, give IV antibiotics, refer urgently with oxytocin IV infusion during transport",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_D",
-            "text": "Throat Swab",
+            "option_id": "D",
+            "text": "Give misoprostol under the tongue and massage uterus only",
             "keywords": [],
             "intents": []
           }
         ],
-        "correct_option_id": "OPT_B",
+        "correct_option_id": "C",
         "critical": true,
-        "explanation_correct": "Correct. Two sputum samples (one on the spot, one early morning) are required for an Acid-Fast Bacilli (AFB) smear or CBNAAT.",
-        "explanation_wrong": "Incorrect. Pulmonary TB requires a Sputum Test to identify the mycobacterium."
+        "explanation_correct": "Correct! Section B11 + B4: 'If placenta not delivered 1 hour after delivery, remove placenta manually. Give appropriate IM/IV antibiotics. If unable to remove, refer urgently. During transfer, continue IV fluids with 20 IU oxytocin at 30 drops/min.' Ergometrine is CONTRAINDICATED with retained placenta.",
+        "explanation_wrong": "Incorrect. Section B11 + B4: 'If placenta not delivered 1 hour after delivery, remove placenta manually. Give appropriate IM/IV antibiotics. If unable to remove, refer urgently. During transfer, continue IV fluids with 20 IU oxytocin at 30 drops/min.' Ergometrine is CONTRAINDICATED with retained placenta."
+      },
+      {
+        "question_id": "Q_15",
+        "patient_prompt": "Rani delivered vaginally 20 minutes ago. Bleeding has been controlled. Uterus is now hard and round. Blood loss was estimated at 280 ml. You are at a rural primary health post.",
+        "mcq_question": "According to protocol, what is the MINIMUM standard of care for the next few hours?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Discharge after 2 hours if no further bleeding occurs",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Refer to hospital because blood loss exceeded 250 ml",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Keep at facility for 24 hours, monitor every 30 minutes for 4 hours (BP, pulse, vaginal bleeding, uterus)",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Give a second dose of oxytocin prophylactically and discharge after 1 hour",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": true,
+        "explanation_correct": "Correct! Section B4 + D19-D20: For blood loss ≥250 ml that has stopped: 'Plan to keep the woman in the facility for 24 hours. Monitor intensively every 30 minutes for 4 hours — blood pressure, pulse, vaginal bleeding, uterus.' WHO states: 'DO NOT discharge before 24 hours' after uncomplicated vaginal birth.",
+        "explanation_wrong": "Incorrect. Section B4 + D19-D20: For blood loss ≥250 ml that has stopped: 'Plan to keep the woman in the facility for 24 hours. Monitor intensively every 30 minutes for 4 hours — blood pressure, pulse, vaginal bleeding, uterus.' WHO states: 'DO NOT discharge before 24 hours' after uncomplicated vaginal birth."
       }
     ]
   },
   {
-    "scenario_id": "DIABETES_FOLLOWUP_01",
-    "title": "Diabetes Follow-up: Adherence",
-    "category": "NCD",
-    "difficulty": "Medium",
-    "duration_minutes": 5,
-    "thumbnail_url": "/images/diabetes_followup_01.png",
-    "short_description": "Conducting a home visit for a known Diabetic patient.",
-    "language": "en",
-    "skills_targeted": [
-      "NCD Follow-up",
-      "Foot Care Counseling"
-    ],
-    "questions": [
-      {
-        "question_id": "DIAF_Q1",
-        "patient_prompt": "You are visiting Geeta, who has Type 2 Diabetes. She says she stopped her medication last week because she 'felt fine'.",
-        "mcq_question": "What is your response?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Agree with her. Only take medicine when feeling sick.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Counsel her that Diabetes is a lifelong condition and medication must never be stopped without consulting a doctor, even if feeling well.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Give her double the dose today.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Tell her to just avoid sugar instead of medicine.",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_B",
-        "critical": true,
-        "explanation_correct": "Correct. ASHA workers play a critical role in ensuring NCD treatment adherence, as patients often incorrectly stop meds when asymptomatic.",
-        "explanation_wrong": "Incorrect. Diabetes medication must be taken daily as prescribed. Stopping it causes dangerous silent sugar spikes."
-      },
-      {
-        "question_id": "DIAF_Q2",
-        "patient_prompt": "Geeta mentions she has a small cut on the sole of her foot that hasn't healed in a month.",
-        "mcq_question": "What should you do?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Tell her to wash it with soap.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Give her a band-aid.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Recognize this as a high-risk 'Diabetic Foot Ulcer' and refer her immediately to the PHC/Doctor.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Apply some hot oil to it.",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_C",
-        "critical": true,
-        "explanation_correct": "Correct. Non-healing wounds in diabetics can quickly lead to gangrene and amputation. Immediate referral is needed.",
-        "explanation_wrong": "Incorrect. A non-healing wound in a diabetic is a massive red flag requiring a doctor's intervention."
-      }
-    ]
-  },
-  {
-    "scenario_id": "HYPERTENSION_URGENT_01",
-    "title": "Hypertension: Severe Headache",
-    "category": "NCD",
-    "difficulty": "Hard",
+    "scenario_id": "LABOUR__DANGER_SIGNS___EMERGENCY_MANAGEMENT",
+    "title": "Labour: Danger Signs & Emergency Management",
+    "category": "Maternal Health (Intrapartum)",
+    "difficulty": "Easy",
     "duration_minutes": 5,
     "thumbnail_url": "/images/hypertension_urgent_01.png",
-    "short_description": "Recognizing a hypertensive crisis.",
+    "short_description": "Learn how to handle Labour: Danger Signs & Emergency Management correctly based on WHO protocols.",
     "language": "en",
     "skills_targeted": [
-      "BP Checking",
-      "Referral"
+      "Clinical Assessment",
+      "WHO Protocols",
+      "Decision Making"
     ],
     "questions": [
       {
-        "question_id": "HYP_Q1",
-        "patient_prompt": "An elderly man complains of a severe, throbbing headache, chest tightness, and dizziness. He is a known hypertensive.",
-        "mcq_question": "What is your clinical interpretation?",
+        "question_id": "Q_16",
+        "patient_prompt": "Kamala is in active labour. You check the fetal heart rate and find it is 170 beats per minute. You reposition her to her left side. After 30 minutes of observation, FHR remains at 168 bpm.",
+        "mcq_question": "What do you do next?",
         "options": [
           {
-            "option_id": "OPT_A",
-            "text": "He just needs to sleep.",
+            "option_id": "A",
+            "text": "Continue monitoring — this is normal in labour",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_B",
-            "text": "He is likely experiencing a Hypertensive Crisis, a medical emergency.",
+            "option_id": "B",
+            "text": "Give the mother IV fluids and oxygen only",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_C",
-            "text": "He has a cold.",
+            "option_id": "C",
+            "text": "If early labour, refer urgently to hospital. If late labour, call for help, monitor after every contraction, prepare for newborn resuscitation",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_D",
-            "text": "He needs a massage.",
+            "option_id": "D",
+            "text": "Give oxytocin to speed up delivery",
             "keywords": [],
             "intents": []
           }
         ],
-        "correct_option_id": "OPT_B",
-        "critical": true,
-        "explanation_correct": "Correct. Severe headache and chest pain in a known hypertensive indicate dangerously high blood pressure.",
-        "explanation_wrong": "Incorrect. These are critical danger signs for stroke or heart attack induced by high BP."
-      },
-      {
-        "question_id": "HYP_Q2",
-        "patient_prompt": "You check his BP using your digital monitor. It reads 190/110 mmHg.",
-        "mcq_question": "What must you do?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Urgent referral to the nearest hospital.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Give him salt water.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Wait 5 hours and check again.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Give him paracetamol.",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_A",
-        "critical": true,
-        "explanation_correct": "Correct. BP over 180/110 is a crisis and requires immediate injected anti-hypertensives at a facility.",
-        "explanation_wrong": "Incorrect. Blood pressure this high can cause an immediate brain hemorrhage. Rapid referral is required."
-      }
-    ]
-  },
-  {
-    "scenario_id": "IMMUNIZATION_HESITANCY_01",
-    "title": "Child Immunization: Hesitancy",
-    "category": "Immunization",
-    "difficulty": "Easy",
-    "duration_minutes": 4,
-    "thumbnail_url": "/images/immunization_hesitancy_01.png",
-    "short_description": "Counsel a family refusing the Pentavalent vaccine.",
-    "language": "en",
-    "skills_targeted": [
-      "Counseling",
-      "Vaccine Knowledge"
-    ],
-    "questions": [
-      {
-        "question_id": "IMM_Q1",
-        "patient_prompt": "A mother refuses to give her 6-week-old baby the Pentavalent vaccine because 'the last time the older child got a shot, he had a fever for two days'.",
-        "mcq_question": "How do you respond?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Tell her vaccines are bad anyway.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Scold her for being uneducated.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Empathize, explain that mild fever is a normal sign the medicine is working, and the vaccine protects from 5 deadly diseases.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Force her to bring the child.",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_C",
+        "correct_option_id": "C",
         "critical": false,
-        "explanation_correct": "Correct. Effective ASHA counseling relies on empathy, addressing fears, and explaining the immense benefits of the vaccine.",
-        "explanation_wrong": "Incorrect. Scolding or forcing ruins trust. You must respectfully explain that mild fever is normal."
-      }
-    ]
-  },
-  {
-    "scenario_id": "NEWBORN_NOT_FEEDING_01",
-    "title": "Newborn: Not Feeding",
-    "category": "Newborn Care",
-    "difficulty": "Hard",
-    "duration_minutes": 6,
-    "thumbnail_url": "/images/newborn_not_feeding_01.png",
-    "short_description": "Assess a neonate during an HBNC visit.",
-    "language": "en",
-    "skills_targeted": [
-      "HBNC Protocol",
-      "Neonate Danger Signs"
-    ],
-    "questions": [
-      {
-        "question_id": "NB_Q1",
-        "patient_prompt": "On Day 3 of HBNC (Home Based Newborn Care), you find the newborn is completely lethargic and refusing to breastfeed.",
-        "mcq_question": "How does the IMNCI protocol classify 'Not feeding since birth' or 'stopped feeding well'?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "A normal phase for newborns.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "A Severe Danger Sign requiring immediate referral.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "A sign the mother's milk is bad.",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "A sign the baby needs formula milk.",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_B",
-        "critical": true,
-        "explanation_correct": "Correct. A neonate refusing to feed is one of the absolute most critical danger signs indicating sepsis or hypothermia.",
-        "explanation_wrong": "Incorrect. Not feeding is a SEVERE danger sign in newborns. You must refer immediately."
-      }
-    ]
-  },
-  {
-    "scenario_id": "MALNUTRITION_SCREEN_01",
-    "title": "Child Malnutrition: MUAC",
-    "category": "Nutrition",
-    "difficulty": "Medium",
-    "duration_minutes": 6,
-    "thumbnail_url": "/images/malnutrition_screen_01.png",
-    "short_description": "Screening for SAM (Severe Acute Malnutrition).",
-    "language": "en",
-    "skills_targeted": [
-      "MUAC Measurement",
-      "Nutrition Referral"
-    ],
-    "questions": [
-      {
-        "question_id": "MAL_Q1",
-        "patient_prompt": "You measure a 2-year-old child's Mid-Upper Arm Circumference (MUAC). The tape shows Red.",
-        "mcq_question": "What does the Red zone on the MUAC tape indicate?",
-        "options": [
-          {
-            "option_id": "OPT_A",
-            "text": "Normal nutrition",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_B",
-            "text": "Moderate Acute Malnutrition (MAM)",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_C",
-            "text": "Severe Acute Malnutrition (SAM)",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "OPT_D",
-            "text": "Obesity",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "OPT_C",
-        "critical": true,
-        "explanation_correct": "Correct. Red (< 11.5 cm) indicates Severe Acute Malnutrition (SAM), meaning the child is at high risk of death.",
-        "explanation_wrong": "Incorrect. Red indicates Severe Acute Malnutrition (SAM)."
+        "explanation_correct": "Correct! Section D14 — Fetal Heart Rate Problems: FHR >160 bpm after 30 minutes of observation = Baby Not Well. Protocol: 'If early labour → refer urgently to hospital. If late labour → call for help, monitor after every contraction, prepare for newborn resuscitation.'",
+        "explanation_wrong": "Incorrect. Section D14 — Fetal Heart Rate Problems: FHR >160 bpm after 30 minutes of observation = Baby Not Well. Protocol: 'If early labour → refer urgently to hospital. If late labour → call for help, monitor after every contraction, prepare for newborn resuscitation.'"
       },
       {
-        "question_id": "MAL_Q2",
-        "patient_prompt": "What is the standard protocol for a child identified as SAM with medical complications (like edema or fever)?",
-        "mcq_question": "Where should the child be sent?",
+        "question_id": "Q_17",
+        "patient_prompt": "Seema is in labour. You perform a vaginal examination and suddenly notice the umbilical cord is visible at the vulva. The fetal heart rate is detectable.",
+        "mcq_question": "What is the MOST critical immediate action?",
         "options": [
           {
-            "option_id": "OPT_A",
-            "text": "Refer to the Anganwadi center for extra rations only.",
+            "option_id": "A",
+            "text": "Allow normal labour to continue — cord prolapse resolves naturally",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_B",
-            "text": "Admit to the nearest Nutritional Rehabilitation Centre (NRC).",
+            "option_id": "B",
+            "text": "Give oxytocin to speed up delivery immediately",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_C",
-            "text": "Tell the mother to feed the child more rice.",
+            "option_id": "C",
+            "text": "Manage as prolapsed cord — this is an emergency requiring urgent action and immediate referral",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_D",
-            "text": "Give iron syrup and wait.",
+            "option_id": "D",
+            "text": "Perform a vaginal delivery at the health post with available assistance",
             "keywords": [],
             "intents": []
           }
         ],
-        "correct_option_id": "OPT_B",
+        "correct_option_id": "C",
+        "critical": false,
+        "explanation_correct": "Correct! Section D14: 'Cord seen at vulva = PROLAPSED CORD — Manage urgently.' This is an obstetric emergency. The protocol flags this as a priority danger sign under FHR monitoring during labour, requiring immediate urgent management and hospital referral.",
+        "explanation_wrong": "Incorrect. Section D14: 'Cord seen at vulva = PROLAPSED CORD — Manage urgently.' This is an obstetric emergency. The protocol flags this as a priority danger sign under FHR monitoring during labour, requiring immediate urgent management and hospital referral."
+      },
+      {
+        "question_id": "Q_18",
+        "patient_prompt": "Durga has been in labour for 6 hours. She suddenly develops convulsions. After the convulsion ends, she is unconscious. Her diastolic BP measured before the episode was 115 mmHg.",
+        "mcq_question": "What is the correct IMMEDIATE management sequence?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Give diazepam first, then check BP, then refer",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Protect from injury, manage airway, insert IV slowly, give magnesium sulphate, give antihypertensive (diastolic >110), refer urgently",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Give oxytocin to complete delivery first, then manage convulsions",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Give glucose IV, antibiotics, and refer without magnesium sulphate",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "B",
+        "critical": false,
+        "explanation_correct": "Correct! Section B5 — Convulsions/Unconscious: Protocol sequence: 'Protect from fall and injury. Get help. Manage airway. After convulsion ends, help onto left side. Insert IV and give fluids slowly. Give magnesium sulphate. If diastolic BP >110 mmHg, give antihypertensive. Refer urgently.' This presentation = Eclampsia.",
+        "explanation_wrong": "Incorrect. Section B5 — Convulsions/Unconscious: Protocol sequence: 'Protect from fall and injury. Get help. Manage airway. After convulsion ends, help onto left side. Insert IV and give fluids slowly. Give magnesium sulphate. If diastolic BP >110 mmHg, give antihypertensive. Refer urgently.' This presentation = Eclampsia."
+      },
+      {
+        "question_id": "Q_19",
+        "patient_prompt": "Jaya is in labour. You gave magnesium sulphate loading dose for suspected eclampsia. After 4 hours, you are about to give the maintenance dose (5g IM). You check: knee jerk is present, urine output is 120 ml/4 hours, respiratory rate is 14 breaths/min.",
+        "mcq_question": "Should you give the next dose of magnesium sulphate?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Yes — all signs are within normal range",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Yes — only urine output and knee jerk matter, not respiratory rate",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "No — respiratory rate is below 16/min, which is a contraindication",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Yes — give a reduced half dose since respiratory rate is slightly low",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
         "critical": true,
-        "explanation_correct": "Correct. SAM children with complications require inpatient medical and nutritional therapy at an NRC.",
-        "explanation_wrong": "Incorrect. SAM is a medical emergency requiring admission to a Nutritional Rehabilitation Centre (NRC)."
+        "explanation_correct": "Correct! Section B13: 'Before giving the next dose of magnesium sulphate, ensure: knee jerk is present ✓, urine output >100 ml/4 hrs ✓, respiratory rate >16/min ✗.' Even ONE contraindication sign means DO NOT give the next dose. Respiratory rate of 14/min alone is sufficient to withhold. Antidote if toxicity: calcium gluconate 1g IV.",
+        "explanation_wrong": "Incorrect. Section B13: 'Before giving the next dose of magnesium sulphate, ensure: knee jerk is present ✓, urine output >100 ml/4 hrs ✓, respiratory rate >16/min ✗.' Even ONE contraindication sign means DO NOT give the next dose. Respiratory rate of 14/min alone is sufficient to withhold. Antidote if toxicity: calcium gluconate 1g IV."
+      },
+      {
+        "question_id": "Q_20",
+        "patient_prompt": "Rekha is 38 weeks pregnant and in early labour. Temperature is 38.4°C. Membranes ruptured approximately 20 hours ago. FHR is 168 bpm (sustained). She has foul-smelling vaginal discharge and lower abdominal tenderness.",
+        "mcq_question": "What is the correct classification and action?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Risk of Uterine Infection — encourage fluids, monitor temperature every 4 hours",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Malaria — give artesunate IM and refer",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Uterine and Fetal Infection — insert IV, give IV/IM antibiotics, give oxytocin 10 IU IM after delivery, refer urgently",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Upper Respiratory Tract Infection — advise safe soothing remedy and reassess",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": true,
+        "explanation_correct": "Correct! Section D21 + B15: Temperature ≥38°C with foul-smelling discharge/lower abdominal tenderness/FHR >160 bpm AND rupture of membranes >18 hours = Uterine and Fetal Infection. Actions: 'Insert IV, give fluids rapidly, give appropriate IM/IV antibiotics, give oxytocin 10 IU IM after delivery, refer urgently.'",
+        "explanation_wrong": "Incorrect. Section D21 + B15: Temperature ≥38°C with foul-smelling discharge/lower abdominal tenderness/FHR >160 bpm AND rupture of membranes >18 hours = Uterine and Fetal Infection. Actions: 'Insert IV, give fluids rapidly, give appropriate IM/IV antibiotics, give oxytocin 10 IU IM after delivery, refer urgently.'"
       }
     ]
   },
   {
-    "scenario_id": "FAMILY_PLANNING_01",
-    "title": "Family Planning: Method Counseling",
-    "category": "Women’s Health",
+    "scenario_id": "NEWBORN_CARE_AFTER_BIRTH",
+    "title": "Newborn Care After Birth",
+    "category": "Child Health / Postnatal",
     "difficulty": "Easy",
     "duration_minutes": 5,
-    "thumbnail_url": "/images/family_planning_01.png",
-    "short_description": "Provide basket-of-choice contraceptive counseling.",
+    "thumbnail_url": "/images/pnc_bleeding_fever_01.png",
+    "short_description": "Learn how to handle Newborn Care After Birth correctly based on WHO protocols.",
     "language": "en",
     "skills_targeted": [
-      "Contraceptive Counseling",
-      "Myth busting"
+      "Clinical Assessment",
+      "WHO Protocols",
+      "Decision Making"
     ],
     "questions": [
       {
-        "question_id": "FP_Q1",
-        "patient_prompt": "A young mother wants to space her next child but believes Copper-T (IUD) will travel to her heart.",
-        "mcq_question": "How do you counsel her?",
+        "question_id": "Q_21",
+        "patient_prompt": "A baby has just been delivered at a primary health post. The baby is breathing well and is in good condition. The mother is also stable.",
+        "mcq_question": "According to WHO protocol, when should the umbilical cord be clamped?",
         "options": [
           {
-            "option_id": "OPT_A",
-            "text": "Tell her it's true and offer pills instead.",
+            "option_id": "A",
+            "text": "Immediately after birth to prevent blood loss",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_B",
-            "text": "Laugh at her for believing a myth.",
+            "option_id": "B",
+            "text": "Only after the placenta is delivered",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_C",
-            "text": "Respectfully bust the myth using anatomical flip-charts, explaining it stays safely in the uterus.",
+            "option_id": "C",
+            "text": "Not earlier than 1 minute after birth (delayed cord clamping)",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_D",
-            "text": "Tell her her husband should decide.",
+            "option_id": "D",
+            "text": "After 10 minutes, once the cord stops pulsating completely",
             "keywords": [],
             "intents": []
           }
         ],
-        "correct_option_id": "OPT_C",
+        "correct_option_id": "C",
         "critical": false,
-        "explanation_correct": "Correct. Using IEC materials (flip charts) to visually bust myths is the best way to encourage modern contraceptive adoption.",
-        "explanation_wrong": "Incorrect. Empathy and visual education are required. Never validate a myth."
+        "explanation_correct": "Correct! WHO Recommendation — Delayed Cord Clamping (Strong recommendation, moderate-quality evidence): 'Delayed umbilical cord clamping — not earlier than 1 minute after birth — is recommended for improved maternal and infant health and nutrition outcomes.'",
+        "explanation_wrong": "Incorrect. WHO Recommendation — Delayed Cord Clamping (Strong recommendation, moderate-quality evidence): 'Delayed umbilical cord clamping — not earlier than 1 minute after birth — is recommended for improved maternal and infant health and nutrition outcomes.'"
+      },
+      {
+        "question_id": "Q_22",
+        "patient_prompt": "Baby born 10 minutes ago is in skin-to-skin contact with the mother. You notice the baby has not yet been bathed. A family member insists you bathe the baby immediately as per their custom.",
+        "mcq_question": "What is the WHO-recommended response?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Bathe the baby immediately to respect cultural customs — it is harmless",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Bathe after 1 hour once the baby is stable",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Delay bathing until 24 hours after birth; if cultural reasons require earlier, delay at least 6 hours",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Bathe immediately only if the baby has blood or meconium on skin",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": false,
+        "explanation_correct": "Correct! WHO Postnatal Care Recommendation: 'Bathing should be delayed until 24 hours after birth. If this is not possible due to cultural reasons, bathing should be delayed for at least six hours.' Early bathing risks hypothermia.",
+        "explanation_wrong": "Incorrect. WHO Postnatal Care Recommendation: 'Bathing should be delayed until 24 hours after birth. If this is not possible due to cultural reasons, bathing should be delayed for at least six hours.' Early bathing risks hypothermia."
+      },
+      {
+        "question_id": "Q_23",
+        "patient_prompt": "A newborn is delivered at a health facility. The baby is breathing on its own and is alert. The mother is stable. It has been 5 minutes since birth.",
+        "mcq_question": "According to protocol, what should you do regarding feeding AND eye care within the first hour?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Give sugar water to the baby until breastfeeding is established",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Apply eye ointment only after bathing the baby",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Apply tetracycline eye ointment to both eyes once; encourage breastfeeding when baby shows readiness — do NOT give pre-lacteal feeds",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Wait 2 hours before initiating breastfeeding to allow the mother to rest",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": false,
+        "explanation_correct": "Correct! Section D19 — First Hour Care: 'Apply antiseptic eye drops or ointment (e.g. tetracycline) to both eyes once.' AND 'Encourage the mother to initiate breastfeeding when baby shows signs of readiness. DO NOT give artificial teats or pre-lacteal feeds — no water, sugar water, or local feeds.'",
+        "explanation_wrong": "Incorrect. Section D19 — First Hour Care: 'Apply antiseptic eye drops or ointment (e.g. tetracycline) to both eyes once.' AND 'Encourage the mother to initiate breastfeeding when baby shows signs of readiness. DO NOT give artificial teats or pre-lacteal feeds — no water, sugar water, or local feeds.'"
+      },
+      {
+        "question_id": "Q_24",
+        "patient_prompt": "A baby is born through clear amniotic fluid and starts breathing spontaneously after gentle stimulation (rubbing the back). An assistant asks whether to suction the baby's mouth and nose as routine procedure.",
+        "mcq_question": "What is the WHO-recommended response?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Yes — always suction to clear the airway and prevent aspiration",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Suction only the nose, not the mouth",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Do NOT perform routine suctioning — it is not recommended for babies born through clear fluid who breathe on their own",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Suction only if the baby cries weakly in the first minute",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": true,
+        "explanation_correct": "Correct! WHO Newborn Resuscitation Recommendation (Strong recommendation, high-quality evidence): 'In neonates born through clear amniotic fluid who start breathing on their own after birth, suctioning of the mouth and nose should NOT be performed.' Routine suction is harmful and not recommended.",
+        "explanation_wrong": "Incorrect. WHO Newborn Resuscitation Recommendation (Strong recommendation, high-quality evidence): 'In neonates born through clear amniotic fluid who start breathing on their own after birth, suctioning of the mouth and nose should NOT be performed.' Routine suction is harmful and not recommended."
+      },
+      {
+        "question_id": "Q_25",
+        "patient_prompt": "Baby Aryan is born at a health post. His mother is HIV-positive and on ART. The delivery was uncomplicated. The baby is breathing well. You are deciding whether to delay cord clamping given the mother's HIV status.",
+        "mcq_question": "What is the correct action according to WHO?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Clamp immediately — delayed clamping increases HIV transmission risk to the baby",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Consult the doctor before clamping — no protocol applies here",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Proceed with delayed cord clamping (≥1 min) — there is no evidence it increases HIV transmission risk",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Clamp after 30 seconds as a compromise between benefits and HIV risk",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": true,
+        "explanation_correct": "Correct! WHO Delayed Cord Clamping Recommendation: 'Late cord clamping is recommended even among women living with HIV or women with unknown HIV status. There is no evidence that delaying cord clamping increases the possibility of HIV transmission from mother to newborn.' The proven benefits outweigh theoretical harms.",
+        "explanation_wrong": "Incorrect. WHO Delayed Cord Clamping Recommendation: 'Late cord clamping is recommended even among women living with HIV or women with unknown HIV status. There is no evidence that delaying cord clamping increases the possibility of HIV transmission from mother to newborn.' The proven benefits outweigh theoretical harms."
       }
     ]
   },
   {
-    "scenario_id": "MENTAL_HEALTH_SUPPORT_01",
-    "title": "Mental Health: Postpartum Blues",
-    "category": "Mental Health",
-    "difficulty": "Medium",
+    "scenario_id": "POSTNATAL_FOLLOW_UP__BLEEDING_MANAGEMENT",
+    "title": "Postnatal Follow-up: Bleeding Management",
+    "category": "Maternal Health (PNC)",
+    "difficulty": "Easy",
     "duration_minutes": 6,
-    "thumbnail_url": "/images/mental_health_support_01.png",
-    "short_description": "Recognize maternal depression.",
+    "thumbnail_url": "/images/pnc_bleeding_fever_01.png",
+    "short_description": "Learn how to handle Postnatal Follow-up: Bleeding Management correctly based on WHO protocols.",
     "language": "en",
     "skills_targeted": [
-      "Empathy",
-      "Depression Screening"
+      "Clinical Assessment",
+      "WHO Protocols",
+      "Decision Making"
     ],
     "questions": [
       {
-        "question_id": "MH_Q1",
-        "patient_prompt": "During a PNC visit (Day 14), you notice the new mother is constantly crying, says she feels worthless, and refuses to hold the baby.",
-        "mcq_question": "What is your assessment?",
+        "question_id": "Q_26",
+        "patient_prompt": "Sarita delivered 2 days ago at home. She comes to the health post saying she is bleeding heavily — her pad soaks in under 5 minutes. The uterus feels soft.",
+        "mcq_question": "What is your FIRST action?",
         "options": [
           {
-            "option_id": "OPT_A",
-            "text": "She is just lazy.",
+            "option_id": "A",
+            "text": "Massage the uterine fundus until it is hard, call for help, give oxytocin 10 IU IM",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_B",
-            "text": "Signs of severe Postpartum Depression (PPD).",
+            "option_id": "B",
+            "text": "Give ergometrine 0.2 mg immediately",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_C",
-            "text": "Normal behavior for new mothers.",
+            "option_id": "C",
+            "text": "Ask her to rest and return if bleeding continues",
             "keywords": [],
             "intents": []
           },
           {
-            "option_id": "OPT_D",
-            "text": "She just needs more sleep.",
+            "option_id": "D",
+            "text": "Give her ORS to prevent dehydration from blood loss",
             "keywords": [],
             "intents": []
           }
         ],
-        "correct_option_id": "OPT_B",
+        "correct_option_id": "A",
+        "critical": false,
+        "explanation_correct": "Correct! Section B4 + B10: For heavy postpartum bleeding with a soft uterus: 'Call for extra help. Massage uterus until it is hard and give oxytocin 10 IU IM.' Uterine massage is always the first physical action. Ergometrine is CONTRAINDICATED if pre-eclampsia, hypertension, or retained placenta is present.",
+        "explanation_wrong": "Incorrect. Section B4 + B10: For heavy postpartum bleeding with a soft uterus: 'Call for extra help. Massage uterus until it is hard and give oxytocin 10 IU IM.' Uterine massage is always the first physical action. Ergometrine is CONTRAINDICATED if pre-eclampsia, hypertension, or retained placenta is present."
+      },
+      {
+        "question_id": "Q_27",
+        "patient_prompt": "Leela is 3 days postpartum and presents with fever (39°C), foul-smelling vaginal discharge, and lower abdominal tenderness. She delivered vaginally at home.",
+        "mcq_question": "What is the correct classification and treatment?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Normal postpartum lochia — advise hygiene and return in 2 days",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "UTI — give oral antibiotics and encourage fluids",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Postpartum infection (Endometritis) — give appropriate IV/IM antibiotics, refer urgently if she becomes weak or develops worsening abdominal pain",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Malaria — check for fever and give antimalarials",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": false,
+        "explanation_correct": "Correct! Section B15 — Infection + D21: Fever ≥38°C with foul-smelling lochia and abdominal tenderness postpartum = Postpartum Endometritis. Protocol: Give antibiotics (Clindamycin + Gentamicin). 'If signs persist or mother becomes weak or has abdominal pain postpartum, refer urgently to hospital.'",
+        "explanation_wrong": "Incorrect. Section B15 — Infection + D21: Fever ≥38°C with foul-smelling lochia and abdominal tenderness postpartum = Postpartum Endometritis. Protocol: Give antibiotics (Clindamycin + Gentamicin). 'If signs persist or mother becomes weak or has abdominal pain postpartum, refer urgently to hospital.'"
+      },
+      {
+        "question_id": "Q_28",
+        "patient_prompt": "At a postnatal follow-up 1 hour after delivery, the mother has moderate vaginal bleeding. The uterus is hard and round. The pad is not soaked. Blood loss is estimated at 260 ml and has now stopped. You are at a primary health post.",
+        "mcq_question": "According to protocol, can she be discharged?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Yes — bleeding has stopped and uterus is well contracted",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Yes — as long as you give her iron tablets and advise to return if bleeding restarts",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "No — she must stay at the facility for 24 hours with monitoring every 30 minutes for 4 hours",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Yes — only if the blood loss was under 300 ml and uterus is firm",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": false,
+        "explanation_correct": "Correct! Section B4 + D20: 'If blood loss ≥250 ml but bleeding has stopped: plan to keep the woman in the facility for 24 hours. Monitor intensively every 30 minutes for 4 hours — blood pressure, pulse, vaginal bleeding, uterus.' WHO states: 'DO NOT discharge before 24 hours' after birth.",
+        "explanation_wrong": "Incorrect. Section B4 + D20: 'If blood loss ≥250 ml but bleeding has stopped: plan to keep the woman in the facility for 24 hours. Monitor intensively every 30 minutes for 4 hours — blood pressure, pulse, vaginal bleeding, uterus.' WHO states: 'DO NOT discharge before 24 hours' after birth."
+      },
+      {
+        "question_id": "Q_29",
+        "patient_prompt": "Divya is 5 days postpartum. She felt dizzy and fainted at home. She has heavy vaginal bleeding. On examination, diastolic BP is 95 mmHg on two readings, and she has severe headache. Uterus is soft.",
+        "mcq_question": "What is the correct multi-step action?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Give ergometrine for the uterine atony and refer for hypertension",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Manage postpartum bleeding (massage, oxytocin, IV fluids); DO NOT give ergometrine due to elevated BP; refer urgently to hospital",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Treat hypertension first with antihypertensives, then manage bleeding",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Give misoprostol for bleeding, antihypertensive for BP, and discharge with follow-up",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "B",
         "critical": true,
-        "explanation_correct": "Correct. Feelings of worthlessness and rejecting the baby are huge red flags for Postpartum Depression requiring psychiatric support.",
-        "explanation_wrong": "Incorrect. These are serious signs of clinical Postpartum Depression, not normal fatigue."
+        "explanation_correct": "Correct! Sections B4 + B10 + D22: Combined emergency — PPH with hypertension. Manage uterine atony with massage and oxytocin. Critical: 'DO NOT give ergometrine to women with eclampsia, pre-eclampsia or known hypertension.' Diastolic 95 mmHg on two readings = hypertension. Refer urgently to hospital.",
+        "explanation_wrong": "Incorrect. Sections B4 + B10 + D22: Combined emergency — PPH with hypertension. Manage uterine atony with massage and oxytocin. Critical: 'DO NOT give ergometrine to women with eclampsia, pre-eclampsia or known hypertension.' Diastolic 95 mmHg on two readings = hypertension. Refer urgently to hospital."
+      },
+      {
+        "question_id": "Q_30",
+        "patient_prompt": "Kavita is 6 hours postpartum. Heavy bleeding from a perineal tear persists despite pressure. On examination the tear extends through the anal sphincter into the rectal mucosa.",
+        "mcq_question": "What is the correct classification and action?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Second-degree tear — suture at the health post using local anaesthesia",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Apply pressure for another 10 minutes and reassess",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Third-degree tear — cover with clean pad, refer urgently to hospital. Do NOT attempt suturing at primary level",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Apply antiseptic and give oral antibiotics; suture only if bleeding doesn't stop in 30 minutes",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "C",
+        "critical": true,
+        "explanation_correct": "Correct! Section B12 + D22: A tear involving the anal sphincter and rectal mucosa = Third/Fourth-degree tear. Protocol: 'Cover it with a clean pad and refer the woman urgently to hospital.' Suturing at primary level is explicitly NOT recommended for this degree of tear.",
+        "explanation_wrong": "Incorrect. Section B12 + D22: A tear involving the anal sphincter and rectal mucosa = Third/Fourth-degree tear. Protocol: 'Cover it with a clean pad and refer the woman urgently to hospital.' Suturing at primary level is explicitly NOT recommended for this degree of tear."
       }
     ]
   }
