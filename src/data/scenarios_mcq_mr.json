@@ -5,7 +5,7 @@
     "category": "माता आरोग्य (ANC)",
     "difficulty": "Easy",
     "duration_minutes": 5,
-    "thumbnail_url": "/images/anc_danger_signs_01.png",
+    "thumbnail_url": "/images/anc_danger_signs.png",
     "short_description": "Learn how to handle Antenatal Visit: Danger Signs Screening correctly based on WHO protocols.",
     "language": "en",
     "skills_targeted": [
@@ -197,7 +197,7 @@
     "category": "माता आरोग्य (ANC)",
     "difficulty": "Easy",
     "duration_minutes": 5,
-    "thumbnail_url": "/images/anc_danger_signs_01.png",
+    "thumbnail_url": "/images/anc_anaemia.png",
     "short_description": "Learn how to handle Antenatal Anaemia Screening correctly based on WHO protocols.",
     "language": "en",
     "skills_targeted": [
@@ -389,7 +389,7 @@
     "category": "माता आरोग्य (PNC)",
     "difficulty": "Easy",
     "duration_minutes": 6,
-    "thumbnail_url": "/images/pnc_bleeding_fever_01.png",
+    "thumbnail_url": "/images/pnc_heavy_bleeding.png",
     "short_description": "Learn how to handle Postnatal Follow-up: Heavy Bleeding (PPH) correctly based on WHO protocols.",
     "language": "en",
     "skills_targeted": [
@@ -581,7 +581,7 @@
     "category": "माता आरोग्य (इंट्रापार्टम)",
     "difficulty": "Easy",
     "duration_minutes": 5,
-    "thumbnail_url": "/images/hypertension_urgent_01.png",
+    "thumbnail_url": "/images/labour_danger_signs.png",
     "short_description": "Learn how to handle Labour: Danger Signs & Emergency Management correctly based on WHO protocols.",
     "language": "en",
     "skills_targeted": [
@@ -773,7 +773,7 @@
     "category": "बाल आरोग्य / प्रसवोत्तर",
     "difficulty": "Easy",
     "duration_minutes": 5,
-    "thumbnail_url": "/images/pnc_bleeding_fever_01.png",
+    "thumbnail_url": "/images/newborn_care.png",
     "short_description": "Learn how to handle Newborn Care After Birth correctly based on WHO protocols.",
     "language": "en",
     "skills_targeted": [
@@ -965,7 +965,7 @@
     "category": "माता आरोग्य (PNC)",
     "difficulty": "Easy",
     "duration_minutes": 6,
-    "thumbnail_url": "/images/pnc_bleeding_fever_01.png",
+    "thumbnail_url": "/images/pnc_bleeding_management.png",
     "short_description": "Learn how to handle Postnatal Follow-up: Bleeding Management correctly based on WHO protocols.",
     "language": "en",
     "skills_targeted": [
@@ -1157,7 +1157,7 @@
     "category": "सामान्य रोग",
     "difficulty": "Easy",
     "duration_minutes": 5,
-    "thumbnail_url": "/images/sushrusha_logo.jpeg",
+    "thumbnail_url": "/images/tb_management.png",
     "short_description": "Learn how to handle Tuberculosis: Identification & DOTS Management correctly based on guidelines.",
     "language": "en",
     "skills_targeted": [
@@ -1349,7 +1349,7 @@
     "category": "सामान्य रोग",
     "difficulty": "Easy",
     "duration_minutes": 5,
-    "thumbnail_url": "/images/sushrusha_logo.jpeg",
+    "thumbnail_url": "/images/malaria_management.png",
     "short_description": "Learn how to handle Malaria: Diagnosis, Treatment & Prevention correctly based on guidelines.",
     "language": "en",
     "skills_targeted": [
@@ -1541,7 +1541,7 @@
     "category": "सामान्य रोग (NCD)",
     "difficulty": "Easy",
     "duration_minutes": 5,
-    "thumbnail_url": "/images/sushrusha_logo.jpeg",
+    "thumbnail_url": "/images/ncd_screening.png",
     "short_description": "Learn how to handle Non-Communicable Diseases & Community Screening correctly based on guidelines.",
     "language": "en",
     "skills_targeted": [
@@ -1733,7 +1733,7 @@
     "category": "पुनरुत्पादक आरोग्य",
     "difficulty": "Easy",
     "duration_minutes": 5,
-    "thumbnail_url": "/images/sushrusha_logo.jpeg",
+    "thumbnail_url": "/images/rti_sti_family_planning.png",
     "short_description": "Learn how to handle RTI/STI, Family Planning & Safe Abortion correctly based on guidelines.",
     "language": "en",
     "skills_targeted": [
