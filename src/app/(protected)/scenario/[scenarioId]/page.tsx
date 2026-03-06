@@ -25,11 +25,14 @@ export default function MCQPlayer({ params }: { params: Promise<{ scenarioId: st
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [playingAudioId, setPlayingAudioId] = useState<string | null>(null);
     const videoRef = useRef<HTMLVideoElement>(null);
+    // 0 = try per-question video, 1 = fallback to Q_1.mp4, 2 = show thumbnail
+    const [videoFallback, setVideoFallback] = useState(0);
 
     useEffect(() => {
-        // Cancel speech when component unmounts or question changes
+        // Cancel speech and reset video fallback when question changes
         window.speechSynthesis.cancel();
         setPlayingAudioId(null);
+        setVideoFallback(0);
     }, [currentQIdx]);
 
     const playAudio = (text: string, id: string) => {
@@ -220,27 +223,30 @@ export default function MCQPlayer({ params }: { params: Promise<{ scenarioId: st
                         <video
                             key={videoUrl}
                             ref={videoRef}
-                            src={videoUrl}
+                            src={
+                                videoFallback === 0
+                                    ? videoUrl                                     // try per-question video first
+                                    : `/videos/${scenarioId}/Q_1.mp4`             // fallback: use the single scenario video
+                            }
                             autoPlay
                             playsInline
                             controls={false}
-                            loop={false}
-                            className="absolute inset-0 w-full h-full object-cover"
-                            onError={(e) => {
-                                // If no video file exists, show thumbnail instead
-                                const el = e.currentTarget;
-                                el.style.display = 'none';
-                                const img = el.nextElementSibling as HTMLElement | null;
-                                if (img) img.style.display = 'block';
+                            loop={true}
+                            className={`absolute inset-0 w-full h-full object-cover ${videoFallback >= 2 ? 'hidden' : ''}`}
+                            onError={() => {
+                                if (videoFallback === 0) {
+                                    setVideoFallback(1); // try Q_1.mp4 next
+                                } else {
+                                    setVideoFallback(2); // give up — show thumbnail
+                                }
                             }}
                         />
-                        {/* Thumbnail fallback (hidden when video loads) */}
+                        {/* Thumbnail fallback — shown only when all video attempts fail */}
                         <Image
                             src={scenario.thumbnail_url}
                             alt="Scenario Stage"
                             fill
-                            className="object-cover opacity-95"
-                            style={{ display: 'none' }}
+                            className={`object-cover opacity-95 ${videoFallback < 2 ? 'hidden' : ''}`}
                         />
 
                         {/* Dark gradient overlay — only top half, not covering video content */}
