@@ -192,6 +192,192 @@
     ]
   },
   {
+    "scenario_id": "CPR_SIMULATION",
+    "title": "CPR सिम्युलेशन",
+    "short_description": "समुदायातील हृदय आपत्कालीन परिस्थितींसाठी CPR शिका.",
+    "category": "Emergency Care",
+    "difficulty": "Hard",
+    "duration_minutes": 7,
+    "thumbnail_url": "/images/CPR_IMAGE.png",
+    "questions": [
+      {
+        "question_id": "Q_46",
+        "patient_prompt": "A villager suddenly collapses in front of you and becomes unresponsive.",
+        "mcq_question": "A villager suddenly collapses in front of an ASHA worker and becomes unresponsive. What should be the first action of the ASHA worker?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Immediately start chest compressions",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Check responsiveness by tapping and shouting",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Give water to the patient",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Wait for ambulance",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "B",
+        "critical": true,
+        "explanation_correct": "Correct! The first step in Basic Life Support (BLS) is to check responsiveness by gently tapping the person and shouting to see if they respond. (WHO Basic Life Support Guidelines, AHA BLS Protocol)",
+        "explanation_wrong": "Incorrect. The first step is always to check responsiveness by tapping and shouting — not to start compressions immediately. (WHO Basic Life Support Guidelines, ASHA Training Module 6)"
+      },
+      {
+        "question_id": "Q_47",
+        "patient_prompt": "The patient does not respond when you call or tap him.",
+        "mcq_question": "The patient does not respond when the ASHA worker calls or taps him. What should she do next?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Check breathing and pulse for 10 seconds",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Immediately give medicine",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Put the patient in recovery position",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Leave the patient alone",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "A",
+        "critical": true,
+        "explanation_correct": "Correct! After confirming the patient is unresponsive, check breathing and pulse for no more than 10 seconds. (WHO Emergency Care Training Manual, AHA Basic Life Support Guidelines)",
+        "explanation_wrong": "Incorrect. After confirming unresponsiveness, check for breathing and pulse for no more than 10 seconds before deciding next steps. (WHO Emergency Care Training Manual)"
+      },
+      {
+        "question_id": "Q_48",
+        "patient_prompt": "The patient is not breathing and has no pulse.",
+        "mcq_question": "The patient is not breathing and has no pulse. What should the ASHA worker do next?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Wait for the patient to wake up",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Call emergency services (108) and start CPR",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Give food to the patient",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Move the patient inside the house",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "B",
+        "critical": true,
+        "explanation_correct": "Correct! When cardiac arrest is suspected, immediately call 108 and begin CPR without delay. (WHO Emergency Care System Guidelines, NHM Emergency Response Protocol, AHA BLS Guidelines)",
+        "explanation_wrong": "Incorrect. If there is no breathing and no pulse, call 108 immediately and begin CPR. Every second counts in a cardiac arrest. (NHM Emergency Response Protocol)"
+      },
+      {
+        "question_id": "Q_49",
+        "patient_prompt": "You are performing CPR on the unresponsive adult patient.",
+        "mcq_question": "While performing CPR, what is the correct compression rate and ratio for an adult?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "60 compressions per minute",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "30 compressions and 2 breaths at 100–120 compressions per minute",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "10 compressions and 1 breath",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Only give breaths",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "B",
+        "critical": true,
+        "explanation_correct": "Correct! The recommended CPR cycle for adults is 30 chest compressions followed by 2 rescue breaths at a rate of 100–120 compressions per minute. (WHO BLS Protocol, AHA CPR Guidelines)",
+        "explanation_wrong": "Incorrect. The correct ratio is 30 compressions to 2 rescue breaths at a rate of 100–120 per minute. This ratio maximises blood circulation to the brain and heart. (WHO Basic Life Support Protocol)"
+      },
+      {
+        "question_id": "Q_50",
+        "patient_prompt": "After CPR, the patient starts breathing again but is still weak. The ambulance is on its way.",
+        "mcq_question": "After CPR, the patient starts breathing again. What should the ASHA worker do before the ambulance arrives?",
+        "options": [
+          {
+            "option_id": "A",
+            "text": "Leave the patient alone",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "B",
+            "text": "Place the patient in the recovery position and monitor breathing",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "C",
+            "text": "Ask the patient to stand up",
+            "keywords": [],
+            "intents": []
+          },
+          {
+            "option_id": "D",
+            "text": "Give the patient food immediately",
+            "keywords": [],
+            "intents": []
+          }
+        ],
+        "correct_option_id": "B",
+        "critical": false,
+        "explanation_correct": "Correct! Place the patient in the recovery position (on their side) to keep the airway open and prevent choking, and monitor breathing continuously until the ambulance arrives. (WHO First Aid Guidelines, AHA CPR Recovery Protocol)",
+        "explanation_wrong": "Incorrect. Once breathing resumes, place the patient in the recovery position to keep the airway open and prevent choking. Continue monitoring breathing. (WHO First Aid Guidelines)"
+      }
+    ]
+  },
+  {
     "scenario_id": "ANTENATAL_ANAEMIA_SCREENING",
     "title": "जन्मपूर्व ऍनिमिया स्क्रीनिंग",
     "category": "माता आरोग्य (ANC)",
@@ -1724,192 +1910,6 @@
         "critical": true,
         "explanation_correct": "बरोबर! सत्र 7.6 NCD केस स्टडी 3 (अमन): 'आशा अमनला कळवू शकते की हृदयविकाराचा झटका आणि ब्रेन हॅमरेज यांसारख्या अनेक असंसर्गजन्य रोगांसाठी उच्च रक्तदाब हा सर्वात मोठा धोका घटक आहे. शिवाय, बैठी जीवनशैली, जंक फूड, धूम्रपान आणि मद्यपान यामुळे धोका वाढतो. त्यामुळे त्यांनी तातडीने जवळच्या आरोग्य केंद्रात जाऊन योग्य उपचार करून पाठपुरावा करावा.' उच्चरक्तदाब अनेकदा लक्षणे नसलेला पण प्राणघातक असतो.",
         "explanation_wrong": "अयोग्य. सत्र 7.6 NCD केस स्टडी 3 (अमन): 'आशा अमनला कळवू शकते की हृदयविकाराचा झटका आणि ब्रेन हॅमरेज यांसारख्या अनेक असंसर्गजन्य रोगांसाठी उच्च रक्तदाब हा सर्वात मोठा धोका घटक आहे. शिवाय, बैठी जीवनशैली, जंक फूड, धूम्रपान आणि मद्यपान यामुळे धोका वाढतो. त्यामुळे त्यांनी तातडीने जवळच्या आरोग्य केंद्रात जाऊन योग्य उपचार करून पाठपुरावा करावा.' उच्चरक्तदाब अनेकदा लक्षणे नसलेला पण प्राणघातक असतो."
-      }
-    ]
-  },
-  {
-    "scenario_id": "CPR_SIMULATION",
-    "title": "CPR सिम्युलेशन",
-    "short_description": "समुदायातील हृदय आपत्कालीन परिस्थितींसाठी CPR शिका.",
-    "category": "Emergency Care",
-    "difficulty": "Hard",
-    "duration_minutes": 7,
-    "thumbnail_url": "/images/CPR_IMAGE.png",
-    "questions": [
-      {
-        "question_id": "Q_46",
-        "patient_prompt": "A villager suddenly collapses in front of you and becomes unresponsive.",
-        "mcq_question": "A villager suddenly collapses in front of an ASHA worker and becomes unresponsive. What should be the first action of the ASHA worker?",
-        "options": [
-          {
-            "option_id": "A",
-            "text": "Immediately start chest compressions",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "B",
-            "text": "Check responsiveness by tapping and shouting",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "C",
-            "text": "Give water to the patient",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "D",
-            "text": "Wait for ambulance",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "B",
-        "critical": true,
-        "explanation_correct": "Correct! The first step in Basic Life Support (BLS) is to check responsiveness by gently tapping the person and shouting to see if they respond. (WHO Basic Life Support Guidelines, AHA BLS Protocol)",
-        "explanation_wrong": "Incorrect. The first step is always to check responsiveness by tapping and shouting — not to start compressions immediately. (WHO Basic Life Support Guidelines, ASHA Training Module 6)"
-      },
-      {
-        "question_id": "Q_47",
-        "patient_prompt": "The patient does not respond when you call or tap him.",
-        "mcq_question": "The patient does not respond when the ASHA worker calls or taps him. What should she do next?",
-        "options": [
-          {
-            "option_id": "A",
-            "text": "Check breathing and pulse for 10 seconds",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "B",
-            "text": "Immediately give medicine",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "C",
-            "text": "Put the patient in recovery position",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "D",
-            "text": "Leave the patient alone",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "A",
-        "critical": true,
-        "explanation_correct": "Correct! After confirming the patient is unresponsive, check breathing and pulse for no more than 10 seconds. (WHO Emergency Care Training Manual, AHA Basic Life Support Guidelines)",
-        "explanation_wrong": "Incorrect. After confirming unresponsiveness, check for breathing and pulse for no more than 10 seconds before deciding next steps. (WHO Emergency Care Training Manual)"
-      },
-      {
-        "question_id": "Q_48",
-        "patient_prompt": "The patient is not breathing and has no pulse.",
-        "mcq_question": "The patient is not breathing and has no pulse. What should the ASHA worker do next?",
-        "options": [
-          {
-            "option_id": "A",
-            "text": "Wait for the patient to wake up",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "B",
-            "text": "Call emergency services (108) and start CPR",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "C",
-            "text": "Give food to the patient",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "D",
-            "text": "Move the patient inside the house",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "B",
-        "critical": true,
-        "explanation_correct": "Correct! When cardiac arrest is suspected, immediately call 108 and begin CPR without delay. (WHO Emergency Care System Guidelines, NHM Emergency Response Protocol, AHA BLS Guidelines)",
-        "explanation_wrong": "Incorrect. If there is no breathing and no pulse, call 108 immediately and begin CPR. Every second counts in a cardiac arrest. (NHM Emergency Response Protocol)"
-      },
-      {
-        "question_id": "Q_49",
-        "patient_prompt": "You are performing CPR on the unresponsive adult patient.",
-        "mcq_question": "While performing CPR, what is the correct compression rate and ratio for an adult?",
-        "options": [
-          {
-            "option_id": "A",
-            "text": "60 compressions per minute",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "B",
-            "text": "30 compressions and 2 breaths at 100–120 compressions per minute",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "C",
-            "text": "10 compressions and 1 breath",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "D",
-            "text": "Only give breaths",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "B",
-        "critical": true,
-        "explanation_correct": "Correct! The recommended CPR cycle for adults is 30 chest compressions followed by 2 rescue breaths at a rate of 100–120 compressions per minute. (WHO BLS Protocol, AHA CPR Guidelines)",
-        "explanation_wrong": "Incorrect. The correct ratio is 30 compressions to 2 rescue breaths at a rate of 100–120 per minute. This ratio maximises blood circulation to the brain and heart. (WHO Basic Life Support Protocol)"
-      },
-      {
-        "question_id": "Q_50",
-        "patient_prompt": "After CPR, the patient starts breathing again but is still weak. The ambulance is on its way.",
-        "mcq_question": "After CPR, the patient starts breathing again. What should the ASHA worker do before the ambulance arrives?",
-        "options": [
-          {
-            "option_id": "A",
-            "text": "Leave the patient alone",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "B",
-            "text": "Place the patient in the recovery position and monitor breathing",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "C",
-            "text": "Ask the patient to stand up",
-            "keywords": [],
-            "intents": []
-          },
-          {
-            "option_id": "D",
-            "text": "Give the patient food immediately",
-            "keywords": [],
-            "intents": []
-          }
-        ],
-        "correct_option_id": "B",
-        "critical": false,
-        "explanation_correct": "Correct! Place the patient in the recovery position (on their side) to keep the airway open and prevent choking, and monitor breathing continuously until the ambulance arrives. (WHO First Aid Guidelines, AHA CPR Recovery Protocol)",
-        "explanation_wrong": "Incorrect. Once breathing resumes, place the patient in the recovery position to keep the airway open and prevent choking. Continue monitoring breathing. (WHO First Aid Guidelines)"
       }
     ]
   }
