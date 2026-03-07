@@ -222,6 +222,7 @@ export default function MCQPlayer({ params }: { params: Promise<{ scenarioId: st
                             ref={videoRef}
                             src={videoUrl}
                             autoPlay
+                            muted
                             playsInline
                             controls={false}
                             loop={false}
