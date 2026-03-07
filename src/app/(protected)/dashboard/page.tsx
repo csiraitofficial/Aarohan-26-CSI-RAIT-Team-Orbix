@@ -53,13 +53,10 @@ export default function DashboardPage() {
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 bg-gradient-to-br from-[#1e3a8a] via-[#1e40af] to-[#3b82f6] p-8 md:p-10 rounded-[2rem] shadow-[0_8px_30px_rgb(30,58,138,0.2)] border border-blue-400/20 mt-2 relative overflow-hidden text-white">
                 <div className="absolute right-0 top-0 w-64 h-64 bg-white/10 rounded-full blur-[80px] -mr-20 -mt-20 pointer-events-none"></div>
                 <div className="absolute left-0 bottom-0 w-40 h-40 bg-[url('/images/hero-background.png')] bg-cover opacity-20 rounded-full blur-[40px] -ml-10 -mb-10 pointer-events-none mix-blend-screen"></div>
-                
-                <div className="relative z-10">
-                    <div className="inline-flex items-center rounded-full border border-white/20 bg-black/20 px-3 py-1 text-xs font-bold text-blue-100 shadow-inner mb-4 backdrop-blur-md">
-                        ✨ Clinical Hub
-                    </div>
+
+                <div className="relative z-10 text-center md:text-left mt-2 md:mt-0">
                     <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight drop-shadow-sm">
-                        {t('dashboard', 'greeting').split(',')[0]}, <span className="text-orange-300">{user?.display_name || 'Health Champion'}</span> 👋
+                        {t('dashboard', 'greeting').split(',')[0]}, <span className="text-orange-300">{user?.display_name || 'Health Champion'}</span>
                     </h1>
                     <p className="text-blue-100 mt-2 text-sm md:text-base font-medium max-w-md break-words">Ready to enhance your clinical protocol skills today?</p>
                 </div>
