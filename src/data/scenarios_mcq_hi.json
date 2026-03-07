@@ -202,178 +202,178 @@
     "questions": [
       {
         "question_id": "Q_46",
-        "patient_prompt": "A villager suddenly collapses in front of you and becomes unresponsive.",
-        "mcq_question": "A villager suddenly collapses in front of an ASHA worker and becomes unresponsive. What should be the first action of the ASHA worker?",
+        "patient_prompt": "एक ग्रामीण अचानक आपके सामने गिर जाता है और बेहोश हो जाता है।",
+        "mcq_question": "एक ग्रामीण अचानक आपके सामने गिर जाता है और बेहोश हो जाता है। ASHA कार्यकर्ता को पहले क्या करना चाहिए?",
         "options": [
           {
             "option_id": "A",
-            "text": "Immediately start chest compressions",
+            "text": "तुरंत छाती पर दबाव (chest compressions) शुरू करें",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "B",
-            "text": "Check responsiveness by tapping and shouting",
+            "text": "थपथपाकर और चिल्लाकर होश (responsiveness) की जाँच करें",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "C",
-            "text": "Give water to the patient",
+            "text": "मरीज को पानी दें",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "D",
-            "text": "Wait for ambulance",
+            "text": "एम्बुलेंस का इंतजार करें",
             "keywords": [],
             "intents": []
           }
         ],
         "correct_option_id": "B",
         "critical": true,
-        "explanation_correct": "Correct! The first step in Basic Life Support (BLS) is to check responsiveness by gently tapping the person and shouting to see if they respond. (WHO Basic Life Support Guidelines, AHA BLS Protocol)",
-        "explanation_wrong": "Incorrect. The first step is always to check responsiveness by tapping and shouting — not to start compressions immediately. (WHO Basic Life Support Guidelines, ASHA Training Module 6)"
+        "explanation_correct": "सही! बेसिक लाइफ सपोर्ट (BLS) का पहला कदम यह जाँचना है कि व्यक्ति होश में है या नहीं — धीरे से थपथपाकर और आवाज लगाकर। (WHO BLS दिशानिर्देश, AHA BLS प्रोटोकॉल)",
+        "explanation_wrong": "गलत। पहला कदम हमेशा होश की जाँच करना है — तुरंत दबाव शुरू करना नहीं। (WHO BLS दिशानिर्देश, ASHA प्रशिक्षण मॉड्यूल 6)"
       },
       {
         "question_id": "Q_47",
-        "patient_prompt": "The patient does not respond when you call or tap him.",
-        "mcq_question": "The patient does not respond when the ASHA worker calls or taps him. What should she do next?",
+        "patient_prompt": "होश न होने की पुष्टि हो गई है। अगला कदम क्या है?",
+        "mcq_question": "ASHA कार्यकर्ता ने पुष्टि की कि व्यक्ति बेहोश है और सामान्य रूप से सांस नहीं ले रहा। अगला तत्काल कदम क्या है?",
         "options": [
           {
             "option_id": "A",
-            "text": "Check breathing and pulse for 10 seconds",
+            "text": "पास के व्यक्ति को मदद के लिए बुलाएँ और एम्बुलेंस (108) को कॉल करें",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "B",
-            "text": "Immediately give medicine",
+            "text": "मरीज को करवट दिलाएँ",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "C",
-            "text": "Put the patient in recovery position",
+            "text": "मुँह से पानी डालें",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "D",
-            "text": "Leave the patient alone",
+            "text": "पहले घर के किसी सदस्य को बुलाएँ",
             "keywords": [],
             "intents": []
           }
         ],
         "correct_option_id": "A",
         "critical": true,
-        "explanation_correct": "Correct! After confirming the patient is unresponsive, check breathing and pulse for no more than 10 seconds. (WHO Emergency Care Training Manual, AHA Basic Life Support Guidelines)",
-        "explanation_wrong": "Incorrect. After confirming unresponsiveness, check for breathing and pulse for no more than 10 seconds before deciding next steps. (WHO Emergency Care Training Manual)"
+        "explanation_correct": "सही! पहले मदद के लिए आवाज लगाएँ और 108 पर कॉल करें। CPR एक व्यक्ति अकेले भी शुरू कर सकता है। (WHO BLS दिशानिर्देश, NHM ASHA प्रोटोकॉल)",
+        "explanation_wrong": "गलत। बेहोश और बिना सांस वाले मरीज में पहले मदद बुलाना और एम्बुलेंस कॉल करना जरूरी है। (WHO BLS दिशानिर्देश)"
       },
       {
         "question_id": "Q_48",
-        "patient_prompt": "The patient is not breathing and has no pulse.",
-        "mcq_question": "The patient is not breathing and has no pulse. What should the ASHA worker do next?",
+        "patient_prompt": "मदद बुला ली गई है। अब CPR शुरू करने का समय है।",
+        "mcq_question": "वयस्क को CPR देते समय छाती पर कितनी गहराई से और कितनी तेजी से दबाव देना चाहिए?",
         "options": [
           {
             "option_id": "A",
-            "text": "Wait for the patient to wake up",
+            "text": "कम से कम 5 सेमी गहरा, 100–120 बार प्रति मिनट",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "B",
-            "text": "Call emergency services (108) and start CPR",
+            "text": "2 सेमी गहरा, 60 बार प्रति मिनट",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "C",
-            "text": "Give food to the patient",
+            "text": "8 सेमी गहरा, 150 बार प्रति मिनट",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "D",
-            "text": "Move the patient inside the house",
+            "text": "3 सेमी गहरा, 80 बार प्रति मिनट",
             "keywords": [],
             "intents": []
           }
         ],
-        "correct_option_id": "B",
+        "correct_option_id": "A",
         "critical": true,
-        "explanation_correct": "Correct! When cardiac arrest is suspected, immediately call 108 and begin CPR without delay. (WHO Emergency Care System Guidelines, NHM Emergency Response Protocol, AHA BLS Guidelines)",
-        "explanation_wrong": "Incorrect. If there is no breathing and no pulse, call 108 immediately and begin CPR. Every second counts in a cardiac arrest. (NHM Emergency Response Protocol)"
+        "explanation_correct": "सही! सही दबाव है कम से कम 5 सेमी गहरा और 100–120 बार प्रति मिनट। यह दिल को खून पंप करने में मदद करता है। (AHA BLS 2020 दिशानिर्देश)",
+        "explanation_wrong": "गलत। सही दबाव कम से कम 5 सेमी गहरा और 100–120 बार प्रति मिनट होना चाहिए। (AHA BLS 2020 दिशानिर्देश, WHO)"
       },
       {
         "question_id": "Q_49",
-        "patient_prompt": "You are performing CPR on the unresponsive adult patient.",
-        "mcq_question": "While performing CPR, what is the correct compression rate and ratio for an adult?",
+        "patient_prompt": "CPR जारी है। बचाव श्वास (rescue breaths) के बारे में एक सवाल।",
+        "mcq_question": "ASHA कार्यकर्ता के लिए प्रशिक्षित न होने की स्थिति में, केवल-हाथों से CPR (Hands-Only CPR) कब उचित है?",
         "options": [
           {
             "option_id": "A",
-            "text": "60 compressions per minute",
+            "text": "वयस्क की अचानक हृदय गति रुकने पर, जब बचावकर्ता बचाव श्वास देने में असमर्थ हो",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "B",
-            "text": "30 compressions and 2 breaths at 100–120 compressions per minute",
+            "text": "डूबने के मामले में",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "C",
-            "text": "10 compressions and 1 breath",
+            "text": "शिशु की हृदय गति रुकने पर",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "D",
-            "text": "Only give breaths",
+            "text": "जब व्यक्ति सांस ले रहा हो लेकिन बेहोश हो",
             "keywords": [],
             "intents": []
           }
         ],
-        "correct_option_id": "B",
-        "critical": true,
-        "explanation_correct": "Correct! The recommended CPR cycle for adults is 30 chest compressions followed by 2 rescue breaths at a rate of 100–120 compressions per minute. (WHO BLS Protocol, AHA CPR Guidelines)",
-        "explanation_wrong": "Incorrect. The correct ratio is 30 compressions to 2 rescue breaths at a rate of 100–120 per minute. This ratio maximises blood circulation to the brain and heart. (WHO Basic Life Support Protocol)"
+        "correct_option_id": "A",
+        "critical": false,
+        "explanation_correct": "सही! केवल-हाथों से CPR वयस्क की अचानक हृदय गति रुकने पर उचित है — विशेषकर जब बचाव श्वास संभव न हो। (AHA 2020, NHM ASHA दिशानिर्देश)",
+        "explanation_wrong": "गलत। केवल-हाथों से CPR वयस्क में अचानक हृदय गति रुकने पर उचित है, डूबने या शिशु के मामले में नहीं। (AHA 2020 दिशानिर्देश)"
       },
       {
         "question_id": "Q_50",
-        "patient_prompt": "After CPR, the patient starts breathing again but is still weak. The ambulance is on its way.",
-        "mcq_question": "After CPR, the patient starts breathing again. What should the ASHA worker do before the ambulance arrives?",
+        "patient_prompt": "CPR के बाद मरीज को अस्पताल भेजने की तैयारी।",
+        "mcq_question": "CPR के बाद जब व्यक्ति होश में आ जाए, तो ASHA कार्यकर्ता को क्या करना चाहिए?",
         "options": [
           {
             "option_id": "A",
-            "text": "Leave the patient alone",
+            "text": "व्यक्ति को रिकवरी पोजीशन में लिटाएँ और एम्बुलेंस आने तक निगरानी रखें",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "B",
-            "text": "Place the patient in the recovery position and monitor breathing",
+            "text": "व्यक्ति को खड़ा करें और चलाएँ",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "C",
-            "text": "Ask the patient to stand up",
+            "text": "पानी और खाना दें",
             "keywords": [],
             "intents": []
           },
           {
             "option_id": "D",
-            "text": "Give the patient food immediately",
+            "text": "CPR बंद करें और घर जाने दें",
             "keywords": [],
             "intents": []
           }
         ],
-        "correct_option_id": "B",
+        "correct_option_id": "A",
         "critical": false,
-        "explanation_correct": "Correct! Place the patient in the recovery position (on their side) to keep the airway open and prevent choking, and monitor breathing continuously until the ambulance arrives. (WHO First Aid Guidelines, AHA CPR Recovery Protocol)",
-        "explanation_wrong": "Incorrect. Once breathing resumes, place the patient in the recovery position to keep the airway open and prevent choking. Continue monitoring breathing. (WHO First Aid Guidelines)"
+        "explanation_correct": "सही! होश आने पर मरीज को रिकवरी पोजीशन (करवट) में लिटाएँ, सांस की निगरानी करें और एम्बुलेंस का इंतजार करें। (WHO BLS, NHM प्रोटोकॉल)",
+        "explanation_wrong": "गलत। होश में आने के बाद भी मरीज को रिकवरी पोजीशन में रखें और डॉक्टरी सहायता आने तक निगरानी जारी रखें। (WHO BLS दिशानिर्देश)"
       }
     ]
   },
