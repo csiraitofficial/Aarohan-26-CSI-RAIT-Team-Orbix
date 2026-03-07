@@ -98,11 +98,13 @@ export default function ProfilePage() {
                                 </div>
                                 <div>
                                     <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">{t('profile', 'level')}</div>
-                                    <div className="text-gray-800 font-bold text-lg bg-gray-50/50 px-3 py-2 rounded-xl border border-gray-100">Level 4 - Advanced Care</div>
+                                    <div className="text-gray-800 font-bold text-lg bg-gray-50/50 px-3 py-2 rounded-xl border border-gray-100">{user.level || 'Level 1 – Beginner'}</div>
                                 </div>
                                 <div>
                                     <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">{t('profile', 'joined')}</div>
-                                    <div className="text-gray-800 font-bold text-lg bg-gray-50/50 px-3 py-2 rounded-xl border border-gray-100">October 2023</div>
+                                    <div className="text-gray-800 font-bold text-lg bg-gray-50/50 px-3 py-2 rounded-xl border border-gray-100">
+                                        {user.created_at ? new Date(user.created_at).toLocaleDateString('en-IN', { month: 'long', year: 'numeric' }) : '—'}
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -139,37 +141,33 @@ export default function ProfilePage() {
                                 <TrendingUp className="text-blue-500 w-6 h-6" /> Training Competency
                             </h3>
 
-                            <div className="space-y-6">
-                                <div>
-                                    <div className="flex justify-between items-end mb-2">
-                                        <span className="text-sm font-extrabold text-gray-700 tracking-wide">{t('profile', 'maternal')}</span>
-                                        <span className="text-sm font-extrabold text-blue-600 bg-blue-50 px-2 py-0.5 rounded shadow-sm border border-blue-100/50">92%</span>
-                                    </div>
-                                    <div className="w-full bg-gray-100 rounded-full h-3 shadow-inner overflow-hidden border border-black/5">
-                                        <div className="bg-gradient-to-r from-blue-400 to-blue-600 h-3 rounded-full shadow-sm" style={{ width: '92%' }}></div>
-                                    </div>
+                            {user.competency && user.competency.some((c: any) => c.hasData) ? (
+                                <div className="space-y-6">
+                                    {user.competency.map((c: any) => {
+                                        const colorMap: Record<string, { badge: string; bar: string }> = {
+                                            blue: { badge: 'text-blue-600 bg-blue-50 border-blue-100/50', bar: 'from-blue-400 to-blue-600' },
+                                            pink: { badge: 'text-pink-600 bg-pink-50 border-pink-100/50', bar: 'from-pink-400 to-pink-600' },
+                                            orange: { badge: 'text-[#FF7A00] bg-orange-50 border-orange-100/50', bar: 'from-[#FF7A00] to-[#E55A00]' },
+                                        };
+                                        const colors = colorMap[c.color] || colorMap.blue;
+                                        return (
+                                            <div key={c.label}>
+                                                <div className="flex justify-between items-end mb-2">
+                                                    <span className="text-sm font-extrabold text-gray-700 tracking-wide">{c.label}</span>
+                                                    <span className={`text-sm font-extrabold px-2 py-0.5 rounded shadow-sm border ${colors.badge}`}>{c.pct}%</span>
+                                                </div>
+                                                <div className="w-full bg-gray-100 rounded-full h-3 shadow-inner overflow-hidden border border-black/5">
+                                                    <div className={`bg-gradient-to-r ${colors.bar} h-3 rounded-full shadow-sm transition-all duration-700`} style={{ width: `${c.pct}%` }}></div>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
                                 </div>
-
-                                <div>
-                                    <div className="flex justify-between items-end mb-2">
-                                        <span className="text-sm font-extrabold text-gray-700 tracking-wide">{t('profile', 'child')}</span>
-                                        <span className="text-sm font-extrabold text-pink-600 bg-pink-50 px-2 py-0.5 rounded shadow-sm border border-pink-100/50">85%</span>
-                                    </div>
-                                    <div className="w-full bg-gray-100 rounded-full h-3 shadow-inner overflow-hidden border border-black/5">
-                                        <div className="bg-gradient-to-r from-pink-400 to-pink-600 h-3 rounded-full shadow-sm" style={{ width: '85%' }}></div>
-                                    </div>
+                            ) : (
+                                <div className="text-center text-gray-400 py-6 font-medium text-sm">
+                                    Complete scenarios to see your competency scores here.
                                 </div>
-
-                                <div>
-                                    <div className="flex justify-between items-end mb-2">
-                                        <span className="text-sm font-extrabold text-gray-700 tracking-wide">{t('profile', 'comm')}</span>
-                                        <span className="text-sm font-extrabold text-[#FF7A00] bg-orange-50 px-2 py-0.5 rounded shadow-sm border border-orange-100/50">78%</span>
-                                    </div>
-                                    <div className="w-full bg-gray-100 rounded-full h-3 shadow-inner overflow-hidden border border-black/5">
-                                        <div className="bg-gradient-to-r from-[#FF7A00] to-[#E55A00] h-3 rounded-full shadow-sm" style={{ width: '78%' }}></div>
-                                    </div>
-                                </div>
-                            </div>
+                            )}
                         </div>
                     </div>
 
@@ -216,7 +214,7 @@ export default function ProfilePage() {
                                         <div key={report.id} className="bg-gradient-to-br from-emerald-50/50 p-5 rounded-2xl border border-emerald-100 shadow-sm flex flex-col transition-all hover:-translate-y-1 hover:shadow-md">
                                             <div className="flex justify-between items-center mb-3">
                                                 <h4 className="font-bold text-gray-800 text-lg flex items-center gap-2">
-                                                    {report.title} 
+                                                    {report.title}
                                                     <span className={`text-xs px-2 py-1 rounded-full text-white font-bold ml-2 ${report.score >= 80 ? 'bg-emerald-500' : report.score >= 50 ? 'bg-yellow-500' : 'bg-red-500'}`}>
                                                         {report.score}%
                                                     </span>
